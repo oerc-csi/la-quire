@@ -1,1 +1,2 @@
-# la-quire
+# Linked Art Extension for Quire
+
