@@ -1,0 +1,52 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://oerc-csi.github.io/la-quire/iiif/knossos-plan/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      null
+    ]
+  },
+  "items": [
+    {
+      "id": "https://oerc-csi.github.io/la-quire/iiif/knossos-plan/canvas",
+      "type": "Canvas",
+      "height": 1005,
+      "width": 1000,
+      "items": [
+        {
+          "id": "https://oerc-csi.github.io/la-quire/iiif/knossos-plan/canvas/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://oerc-csi.github.io/la-quire/iiif/knossos-plan/canvas/knossos-plan",
+              "motivation": "painting",
+              "target": "https://oerc-csi.github.io/la-quire/iiif/knossos-plan/canvas",
+              "type": "Annotation",
+              "body": {
+                "id": "https://oerc-csi.github.io/la-quire/iiif/knossos-plan/knossos-plan/tiles/info.json",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1005,
+                "width": 1000,
+                "label": {
+                  "en": [
+                    "Knossos-plan"
+                  ]
+                },
+                "service": [
+                  {
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "@id": "https://oerc-csi.github.io/la-quire/iiif/knossos-plan/knossos-plan/tiles/info.json",
+                    "profile": "level0",
+                    "protocol": "http://iiif.io/api/image"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://oerc-csi.github.io/la-quire/iiif/throne-room/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      null
+    ]
+  },
+  "items": [
+    {
+      "id": "https://oerc-csi.github.io/la-quire/iiif/throne-room/canvas",
+      "type": "Canvas",
+      "height": 2143,
+      "width": 3000,
+      "items": [
+        {
+          "id": "https://oerc-csi.github.io/la-quire/iiif/throne-room/canvas/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://oerc-csi.github.io/la-quire/iiif/throne-room/canvas/throne-room",
+              "motivation": "painting",
+              "target": "https://oerc-csi.github.io/la-quire/iiif/throne-room/canvas",
+              "type": "Annotation",
+              "body": {
+                "id": "https://oerc-csi.github.io/la-quire/iiif/throne-room/throne-room/tiles/info.json",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 2143,
+                "width": 3000,
+                "label": {
+                  "en": [
+                    "Throne-room"
+                  ]
+                },
+                "service": [
+                  {
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "@id": "https://oerc-csi.github.io/la-quire/iiif/throne-room/throne-room/tiles/info.json",
+                    "profile": "level0",
+                    "protocol": "http://iiif.io/api/image"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

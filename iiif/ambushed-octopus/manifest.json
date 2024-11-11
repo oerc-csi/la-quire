@@ -1,0 +1,52 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://oerc-csi.github.io/la-quire/iiif/ambushed-octopus/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      null
+    ]
+  },
+  "items": [
+    {
+      "id": "https://oerc-csi.github.io/la-quire/iiif/ambushed-octopus/canvas",
+      "type": "Canvas",
+      "height": 1190,
+      "width": 1102,
+      "items": [
+        {
+          "id": "https://oerc-csi.github.io/la-quire/iiif/ambushed-octopus/canvas/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://oerc-csi.github.io/la-quire/iiif/ambushed-octopus/canvas/ambushed-octopus",
+              "motivation": "painting",
+              "target": "https://oerc-csi.github.io/la-quire/iiif/ambushed-octopus/canvas",
+              "type": "Annotation",
+              "body": {
+                "id": "https://oerc-csi.github.io/la-quire/iiif/ambushed-octopus/ambushed-octopus/tiles/info.json",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1190,
+                "width": 1102,
+                "label": {
+                  "en": [
+                    "Ambushed-octopus"
+                  ]
+                },
+                "service": [
+                  {
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "@id": "https://oerc-csi.github.io/la-quire/iiif/ambushed-octopus/ambushed-octopus/tiles/info.json",
+                    "profile": "level0",
+                    "protocol": "http://iiif.io/api/image"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

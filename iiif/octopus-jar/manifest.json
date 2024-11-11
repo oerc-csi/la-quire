@@ -1,0 +1,52 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://oerc-csi.github.io/la-quire/iiif/octopus-jar/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      null
+    ]
+  },
+  "items": [
+    {
+      "id": "https://oerc-csi.github.io/la-quire/iiif/octopus-jar/canvas",
+      "type": "Canvas",
+      "height": 1000,
+      "width": 1500,
+      "items": [
+        {
+          "id": "https://oerc-csi.github.io/la-quire/iiif/octopus-jar/canvas/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://oerc-csi.github.io/la-quire/iiif/octopus-jar/canvas/octopus-jar",
+              "motivation": "painting",
+              "target": "https://oerc-csi.github.io/la-quire/iiif/octopus-jar/canvas",
+              "type": "Annotation",
+              "body": {
+                "id": "https://oerc-csi.github.io/la-quire/iiif/octopus-jar/octopus-jar/tiles/info.json",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1000,
+                "width": 1500,
+                "label": {
+                  "en": [
+                    "Octopus-jar"
+                  ]
+                },
+                "service": [
+                  {
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "@id": "https://oerc-csi.github.io/la-quire/iiif/octopus-jar/octopus-jar/tiles/info.json",
+                    "profile": "level0",
+                    "protocol": "http://iiif.io/api/image"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

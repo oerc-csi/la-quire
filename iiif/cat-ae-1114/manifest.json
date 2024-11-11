@@ -1,0 +1,52 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://oerc-csi.github.io/la-quire/iiif/cat-ae-1114/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      null
+    ]
+  },
+  "items": [
+    {
+      "id": "https://oerc-csi.github.io/la-quire/iiif/cat-ae-1114/canvas",
+      "type": "Canvas",
+      "height": 1000,
+      "width": 714,
+      "items": [
+        {
+          "id": "https://oerc-csi.github.io/la-quire/iiif/cat-ae-1114/canvas/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://oerc-csi.github.io/la-quire/iiif/cat-ae-1114/canvas/ae_1114",
+              "motivation": "painting",
+              "target": "https://oerc-csi.github.io/la-quire/iiif/cat-ae-1114/canvas",
+              "type": "Annotation",
+              "body": {
+                "id": "https://oerc-csi.github.io/la-quire/iiif/cat-ae-1114/ae_1114/tiles/info.json",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1000,
+                "width": 714,
+                "label": {
+                  "en": [
+                    "Ae 1114"
+                  ]
+                },
+                "service": [
+                  {
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "@id": "https://oerc-csi.github.io/la-quire/iiif/cat-ae-1114/ae_1114/tiles/info.json",
+                    "profile": "level0",
+                    "protocol": "http://iiif.io/api/image"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

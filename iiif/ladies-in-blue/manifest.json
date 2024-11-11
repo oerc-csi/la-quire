@@ -1,0 +1,52 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://oerc-csi.github.io/la-quire/iiif/ladies-in-blue/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      null
+    ]
+  },
+  "items": [
+    {
+      "id": "https://oerc-csi.github.io/la-quire/iiif/ladies-in-blue/canvas",
+      "type": "Canvas",
+      "height": 3024,
+      "width": 5000,
+      "items": [
+        {
+          "id": "https://oerc-csi.github.io/la-quire/iiif/ladies-in-blue/canvas/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://oerc-csi.github.io/la-quire/iiif/ladies-in-blue/canvas/ladies-in-blue",
+              "motivation": "painting",
+              "target": "https://oerc-csi.github.io/la-quire/iiif/ladies-in-blue/canvas",
+              "type": "Annotation",
+              "body": {
+                "id": "https://oerc-csi.github.io/la-quire/iiif/ladies-in-blue/ladies-in-blue/tiles/info.json",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 3024,
+                "width": 5000,
+                "label": {
+                  "en": [
+                    "Ladies-in-blue"
+                  ]
+                },
+                "service": [
+                  {
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "@id": "https://oerc-csi.github.io/la-quire/iiif/ladies-in-blue/ladies-in-blue/tiles/info.json",
+                    "profile": "level0",
+                    "protocol": "http://iiif.io/api/image"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

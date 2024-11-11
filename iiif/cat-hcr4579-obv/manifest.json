@@ -1,0 +1,52 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://oerc-csi.github.io/la-quire/iiif/cat-hcr4579-obv/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      null
+    ]
+  },
+  "items": [
+    {
+      "id": "https://oerc-csi.github.io/la-quire/iiif/cat-hcr4579-obv/canvas",
+      "type": "Canvas",
+      "height": 1971,
+      "width": 2259,
+      "items": [
+        {
+          "id": "https://oerc-csi.github.io/la-quire/iiif/cat-hcr4579-obv/canvas/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://oerc-csi.github.io/la-quire/iiif/cat-hcr4579-obv/canvas/hcr4579obv",
+              "motivation": "painting",
+              "target": "https://oerc-csi.github.io/la-quire/iiif/cat-hcr4579-obv/canvas",
+              "type": "Annotation",
+              "body": {
+                "id": "https://oerc-csi.github.io/la-quire/iiif/cat-hcr4579-obv/hcr4579obv/tiles/info.json",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1971,
+                "width": 2259,
+                "label": {
+                  "en": [
+                    "Hcr4579obv"
+                  ]
+                },
+                "service": [
+                  {
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "@id": "https://oerc-csi.github.io/la-quire/iiif/cat-hcr4579-obv/hcr4579obv/tiles/info.json",
+                    "profile": "level0",
+                    "protocol": "http://iiif.io/api/image"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

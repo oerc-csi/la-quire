@@ -1,0 +1,2818 @@
+<!DOCTYPE html><html><head>
+    <!--
+    <meta charset="utf-8" />
+    <meta name="description" content="${description}">
+    <meta name="keywords" content="${keywords}">
+    <title>${pageTitle}</title>
+    <link rel="canonical" href="${canonicalURL}">
+    <link rel="version-history" href="${publication.repositoryUrl}">
+    -->
+    <link rel="stylesheet" href="pdf.css">
+  </head>
+  <body>
+  
+
+<svg style="display: none">
+      <symbol id="left-arrow-icon" viewBox="0 0 18 32">
+        <path d="M23.1,11.1L21,9l-9,9l9,9l2.1-2.1L16.2,18L23.1,11.1z"></path>
+      </symbol>
+      <symbol id="right-arrow-icon" viewBox="0 0 18 32">
+        <path d="M12.9,11.1L15,9l9,9l-9,9l-2.1-2.1l6.9-6.9L12.9,11.1z"></path>
+      </symbol>
+      <symbol id="search-icon" viewBox="0 0 32 32">
+        <path d="M18.6,16.4h-1.2L17,16c1.5-1.7,2.3-3.9,2.3-6.3C19.3,4.3,15,0,9.7,0S0,4.3,0,9.7s4.3,9.7,9.7,9.7c2.4,0,4.6-0.9,6.3-2.3
+      l0.4,0.4v1.2l7.4,7.4l2.2-2.2L18.6,16.4z M9.7,16.4C6,16.4,3,13.4,3,9.7S6,3,9.7,3s6.7,3,6.7,6.7S13.4,16.4,9.7,16.4z"></path>
+      </symbol>
+      <symbol id="nav-icon" viewBox="0 0 32 32">
+        <path d="M0,6.7h24.9V3.1H0V6.7z M0,13.8h24.9v-3.6H0V13.8z M0,20.9h24.9v-3.6H0V20.9z M28.4,20.9H32v-3.6h-3.6V20.9z M28.4,3.1v3.6
+      H32V3.1H28.4z M28.4,13.8H32v-3.6h-3.6V13.8z"></path>
+      </symbol>
+      <symbol id="arrow-forward-icon" viewBox="0 0 32 32">
+        <path d="M16,5.3l-1.9,1.9l7.4,7.5H5.3v2.7h16.2l-7.4,7.5l1.9,1.9L26.7,16L16,5.3z"></path>
+      </symbol>
+      <symbol id="home-icon" viewBox="0 0 32 32">
+        <path d="M11,18V6l-8.5,6L11,18z M11.5,12l8.5,6V6L11.5,12z"></path>
+      </symbol>
+      <symbol id="start-icon" viewBox="0 0 32 32">
+        <path d="M8,5v14l11-7L8,5z"></path>
+      </symbol>
+      <symbol id="down-arrow-icon" viewBox="0 0 32 32">
+        <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
+      </symbol>
+      <symbol id="link-icon" viewBox="0 0 20 20">
+        <path d="M3.3,16.7c-1.4-1.4-1.4-3.7,0-5.1l3.3-3.3L5,6.7L1.7,10c-2.3,2.3-2.3,6,0,8.3s6,2.3,8.3,0l3.3-3.3l-1.6-1.6l-3.3,3.3
+          C7,18.1,4.7,18.1,3.3,16.7z M7.5,14.1l6.6-6.6l-1.7-1.7l-6.6,6.6L7.5,14.1z M10,1.7L6.7,5l1.6,1.6l3.3-3.3c1.4-1.4,3.7-1.4,5.1,0
+          s1.4,3.7,0,5.1l-3.3,3.3l1.6,1.6l3.3-3.3c2.3-2.3,2.3-6,0-8.3S12.3-0.6,10,1.7z"></path>
+      </symbol>
+      <symbol id="close-icon" viewBox="0 0 48 48">
+        <path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"></path>
+      </symbol>
+      <symbol id="download-icon" viewBox="0 0 32 32">
+        <path d="M28.4,16v12.4H3.6V16H0v12.4c0,2,1.6,3.6,3.6,3.6h24.9c2,0,3.6-1.6,3.6-3.6V16H28.4z M17.8,17.2l4.6-4.6l2.5,2.5L16,24
+          l-8.9-8.9l2.5-2.5l4.6,4.6V0h3.6V17.2z"></path>
+      </symbol>
+      <symbol id="plus-icon" viewBox="0 0 16 16">
+        <path d="M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm0 50C12.767 50 2 39.233 2 26S12.767 2 26 2s24 10.767 24 24-10.767 24-24 24z"></path>
+        <path d="M38.5 25H27V14c0-.553-.448-1-1-1s-1 .447-1 1v11H13.5c-.552 0-1 .447-1 1s.448 1 1 1H25v12c0 .553.448 1 1 1s1-.447 1-1V27h11.5c.552 0 1-.447 1-1s-.448-1-1-1z"></path>
+      </symbol>
+      <symbol id="fullscreen-icon" viewBox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"></path>
+      </symbol>
+      <symbol id="add-circle-icon" viewBox="0 0 20 20">
+        <path d="M9.25 14h1.5v-3.25H14v-1.5h-3.25V6h-1.5v3.25H6v1.5h3.25Zm.75 4q-1.646 0-3.104-.625-1.458-.625-2.552-1.719t-1.719-2.552Q2 11.646 2 10q0-1.667.625-3.115.625-1.447 1.719-2.541Q5.438 3.25 6.896 2.625T10 2q1.667 0 3.115.625 1.447.625 2.541 1.719 1.094 1.094 1.719 2.541Q18 8.333 18 10q0 1.646-.625 3.104-.625 1.458-1.719 2.552t-2.541 1.719Q11.667 18 10 18Zm0-1.5q2.708 0 4.604-1.896T16.5 10q0-2.708-1.896-4.604T10 3.5q-2.708 0-4.604 1.896T3.5 10q0 2.708 1.896 4.604T10 16.5Zm0-6.5Z"></path>
+      </symbol>
+      <symbol id="rotation-icon" viewBox="0 0 24 24">
+        <path d="M8.76918 19.1836L7.77593 18.1904L9.67785 16.2779C7.68107 16.0073 6.01922 15.4801 4.6923 14.6961C3.36537 13.9121 2.7019 13.0201 2.7019 12.0202C2.7019 10.8314 3.60117 9.80777 5.3997 8.9493C7.19822 8.09082 9.39805 7.66158 11.9992 7.66158C14.6003 7.66158 16.8004 8.09082 18.5995 8.9493C20.3985 9.80777 21.298 10.8314 21.298 12.0202C21.298 12.8584 20.8103 13.633 19.835 14.344C18.8597 15.055 17.5679 15.5936 15.9596 15.9596V14.5298C17.2211 14.1965 18.1931 13.7907 18.8754 13.3125C19.5578 12.8343 19.899 12.4035 19.899 12.0202C19.899 11.4676 19.197 10.8362 17.7929 10.126C16.3888 9.4157 14.4582 9.06057 12.001 9.06057C9.5439 9.06057 7.61293 9.4157 6.20813 10.126C4.80331 10.8362 4.1009 11.4676 4.1009 12.0202C4.1009 12.4587 4.59338 12.9806 5.57833 13.5861C6.56328 14.1915 7.89133 14.6154 9.56248 14.8577L7.77593 13.0711L8.76918 12.0779L12.322 15.6308L8.76918 19.1836Z"></path>
+      </symbol>
+    </svg><svg style="display: none" data-outputs-exclude="epub,pdf">
+      <symbol id="by" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M29.9 0C38.3 0 45.4 2.9 51.2 8.7C57 14.5 59.9 21.6 59.9 30C59.9 38.4 57 45.4 51.3 51.1C45.2 57.1 38.1 60 29.8 60C21.7 60 14.7 57.1 8.7 51.2C2.9 45.3 0 38.2 0 30C0 21.8 2.9 14.7 8.8 8.7C14.6 2.9 21.7 0 29.9 0ZM30.1 5.4C23.3 5.4 17.5 7.8 12.8 12.6C7.9 17.6 5.5 23.4 5.5 30C5.5 36.6 7.9 42.4 12.8 47.2C17.7 52.1 23.4 54.5 30.2 54.5C36.9 54.5 42.7 52.1 47.7 47.2C52.4 42.7 54.8 36.9 54.8 30C54.8 23.2 52.4 17.4 47.6 12.6C42.6 7.8 36.8 5.4 30.1 5.4ZM38.1 22.6V34.9H34.7V49.5H25.4V34.8H22V22.6C22 22.1 22.2 21.6 22.6 21.2C23 20.8 23.4 20.6 24 20.6H36.3C36.8 20.6 37.2 20.8 37.6 21.2C37.9 21.6 38.1 22 38.1 22.6ZM25.8 14.8C25.8 12 27.2 10.6 30 10.6C32.8 10.6 34.2 12 34.2 14.8C34.2 17.6 32.8 19 30 19C27.2 19 25.8 17.6 25.8 14.8Z" fill="currentColor"></path>
+      </symbol>
+      <symbol id="cc" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M29.9 0C38.3 0 45.4 2.90484 51.3 8.81469C54.1 11.6194 56.3 14.8247 57.7 18.5309C59.3 22.1369 60 25.9432 60 30.0501C60 34.1569 59.3 38.0634 57.8 41.5693C56.4 45.1753 54.2 48.3806 51.4 51.0851C48.5 53.99 45.2 56.1937 41.4 57.6962C37.7 59.1987 33.8 60 29.9 60C26 60 22.1 59.1987 18.5 57.6962C14.9 56.1937 11.6 53.99 8.7 51.0851C5.8 48.1803 3.6 44.975 2.1 41.3689C0.6 37.7629 0 34.0568 0 30.0501C0 26.0434 0.8 22.2371 2.3 18.6311C3.8 15.025 6 11.6194 8.9 8.71452C14.6 2.90484 21.6 0 29.9 0ZM30.1 5.40901C23.2 5.40901 17.5 7.81302 12.8 12.621C10.4 15.025 8.6 17.7295 7.4 20.7346C6.1 23.7396 5.5 26.8447 5.5 30.0501C5.5 33.2554 6.1 36.3606 7.4 39.3656C8.7 42.3706 10.5 44.975 12.8 47.379C15.2 49.6828 17.8 51.4858 20.8 52.788C23.8 53.99 26.9 54.591 30.1 54.591C33.3 54.591 36.4 53.99 39.4 52.6878C42.4 51.3856 45.1 49.5826 47.6 47.2788C52.3 42.6711 54.6 36.9616 54.6 30.0501C54.6 26.7446 54 23.5392 52.8 20.6344C51.6 17.6294 49.8 15.025 47.5 12.7212C42.6 7.81302 36.8 5.40901 30.1 5.40901ZM29.7 25.0417L25.7 27.1452C25.3 26.2437 24.7 25.6427 24.1 25.2421C23.5 24.8414 22.9 24.7412 22.4 24.7412C19.7 24.7412 18.4 26.5442 18.4 30.0501C18.4 31.6528 18.7 32.9549 19.4 33.9566C20.1 34.9583 21.1 35.3589 22.4 35.3589C24.2 35.3589 25.4 34.4574 26.1 32.7546L29.8 34.6578C29 36.1603 27.9 37.2621 26.5 38.1636C25.1 38.9649 23.6 39.4658 21.9 39.4658C19.2 39.4658 17.1 38.6644 15.4 36.9616C13.8 35.3589 12.9 33.0551 12.9 30.0501C12.9 27.1452 13.7 24.9416 15.4 23.2387C17.1 21.5359 19.2 20.7346 21.7 20.7346C25.4 20.7346 28.1 22.1369 29.7 25.0417ZM47 25.0417L43 27.1452C42.6 26.2437 42 25.6427 41.4 25.2421C40.8 24.8414 40.2 24.7412 39.6 24.7412C36.9 24.7412 35.6 26.5442 35.6 30.0501C35.6 31.6528 35.9 32.9549 36.6 33.9566C37.3 34.9583 38.3 35.3589 39.6 35.3589C41.3 35.3589 42.6 34.4574 43.3 32.7546L47.1 34.6578C46.3 36.1603 45.2 37.2621 43.8 38.1636C42.4 38.9649 40.9 39.4658 39.2 39.4658C36.5 39.4658 34.3 38.6644 32.7 36.9616C31.1 35.3589 30.3 33.0551 30.3 30.0501C30.3 27.1452 31.1 24.9416 32.8 23.2387C34.5 21.5359 36.6 20.7346 39.1 20.7346C42.8 20.7346 45.4 22.1369 47 25.0417Z" fill="currentColor"></path>
+      </symbol>
+      <symbol id="nc" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 0C38.4 0 45.5 2.9 51.3 8.7C57.1 14.5 60 21.6 60 30C60 38.4 57.1 45.4 51.4 51.1C45.3 57.1 38.2 60 29.9 60C21.8 60 14.7 57 8.80001 51.1C2.90001 45.2 0 38.2 0 30C0 21.8 2.90001 14.7 8.80001 8.7C14.7 2.9 21.8 0 30 0ZM6.90001 21.9C6.00001 24.4 5.60001 27.1 5.60001 30C5.60001 36.6 8.00001 42.4 12.9 47.3C17.8 52.1 23.6 54.5 30.3 54.5C37.1 54.5 42.9 52.1 47.8 47.2C49.6 45.5 50.9 43.8 51.9 41.9L40.6 36.9C40.2 38.8 39.3 40.3 37.7 41.5C36.2 42.7 34.4 43.4 32.3 43.6V48.2H28.8V43.6C25.5 43.6 22.4 42.4 19.7 40L23.8 35.8C25.8 37.6 28 38.5 30.5 38.5C31.5 38.5 32.4 38.3 33.2 37.8C33.9 37.3 34.3 36.6 34.3 35.5C34.3 34.7 34 34.1 33.5 33.7L30.6 32.5L27.1 30.9L22.3 28.8L6.90001 21.9ZM30.2 5.4C23.4 5.4 17.6 7.8 12.9 12.6C11.7 13.8 10.6 15.1 9.60001 16.6L21.1 21.7C21.6 20.1 22.5 18.9 23.9 17.9C25.3 17 26.9 16.4 28.8 16.3V11.7H32.3V16.3C35.1 16.4 37.5 17.4 39.8 19.1L35.9 23.1C34.2 21.9 32.5 21.3 30.8 21.3C29.9 21.3 29 21.5 28.3 21.8C27.6 22.2 27.2 22.8 27.2 23.6C27.2 23.9 27.3 24.1 27.5 24.4L31.3 26.1L33.9 27.3L38.7 29.4L54.1 36.3C54.6 34.2 54.9 32.1 54.9 29.9C54.9 23 52.5 17.2 47.7 12.5C42.8 7.8 37 5.4 30.2 5.4Z" fill="currentColor"></path>
+      </symbol>
+      <symbol id="nd" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 0C38.4 0 45.5 2.9 51.3 8.7C57.1 14.5 60 21.6 60 30C60 38.4 57.1 45.4 51.4 51.1C45.4 57 38.2 60 29.9 60C21.8 60 14.8 57.1 8.8 51.2C2.90001 45.3 0 38.3 0 30C0 21.8 2.90001 14.7 8.8 8.7C14.8 2.9 21.8 0 30 0ZM30.2 5.4C23.4 5.4 17.6 7.8 12.9 12.6C8.00001 17.6 5.60001 23.4 5.60001 30C5.60001 36.7 8.00001 42.4 12.9 47.3C17.8 52.2 23.5 54.6 30.3 54.6C37 54.6 42.8 52.2 47.8 47.3C52.5 42.7 54.9 37 54.9 30.1C54.9 23.2 52.5 17.5 47.7 12.7C42.8 7.8 37 5.4 30.2 5.4ZM41.5 22.9V28H19.7V22.9H41.5ZM41.5 32.6V37.7H19.7V32.6H41.5Z" fill="currentColor"></path>
+      </symbol>
+      <symbol id="sa" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 0C38.4 0 45.5 2.9 51.3 8.7C57.1 14.5 60 21.6 60 30C60 38.4 57.1 45.4 51.4 51.1C45.4 57 38.2 60 29.9 60C21.8 60 14.8 57.1 8.8 51.2C2.9 45.3 0 38.3 0 30C0 21.8 2.9 14.7 8.8 8.7C14.8 2.9 21.8 0 30 0ZM30.2 5.4C23.4 5.4 17.6 7.8 12.9 12.6C8.00001 17.6 5.60001 23.4 5.60001 30C5.60001 36.7 8.00001 42.4 12.9 47.2C17.8 52.1 23.5 54.5 30.3 54.5C37 54.5 42.8 52.1 47.8 47.2C52.5 42.6 54.9 36.9 54.9 30C54.9 23.1 52.5 17.4 47.7 12.6C42.8 7.8 37 5.4 30.2 5.4ZM16.8 25.8C17.4 22.1 18.9 19.3 21.2 17.3C23.6 15.3 26.5 14.3 29.9 14.3C34.6 14.3 38.4 15.8 41.1 18.9C43.9 21.9 45.3 25.8 45.3 30.6C45.3 35.2 43.9 39 41 42.1C38.1 45.2 34.4 46.7 29.7 46.7C26.3 46.7 23.4 45.7 20.9 43.6C18.4 41.6 17 38.7 16.5 34.9H24.1C24.3 38.5 26.5 40.4 30.7 40.4C32.8 40.4 34.5 39.5 35.8 37.7C37.1 35.9 37.7 33.4 37.7 30.4C37.7 27.2 37.1 24.8 35.9 23.1C34.7 21.4 33 20.6 30.8 20.6C26.8 20.6 24.5 22.4 24 25.9H26.2L20.3 31.8L14.4 25.9L16.8 25.8Z" fill="currentColor"></path>
+      </symbol>
+      <symbol id="zero" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 12.7C20.1 12.7 17.6 22 17.6 30C17.6 37.9 20.1 47.3 30 47.3C39.9 47.3 42.4 38 42.4 30C42.4 22.1 39.9 12.7 30 12.7ZM30 19.2C30.4 19.2 30.8 19.3 31.1 19.3C31.8 19.9 32.2 20.8 31.5 21.9L24.9 34C24.7 32.5 24.7 31 24.7 29.8C24.7 26.5 24.9 19.2 30 19.2ZM34.9 24.8C35.2 26.7 35.3 28.6 35.3 30C35.3 33.5 35.1 40.8 30 40.8C29.6 40.8 29.2 40.8 28.9 40.7C28.8 40.7 28.8 40.7 28.7 40.6C28.6 40.6 28.5 40.5 28.4 40.5C27.3 40 26.6 39.1 27.6 37.6L34.9 24.8Z" fill="currentColor"></path>
+        <path d="M29.9 0C21.6 0 14.6 2.9 8.8 8.7C5.9 11.6 3.7 14.9 2.2 18.6C0.699997 22.2 0 26 0 30C0 34 0.699997 37.8 2.2 41.4C3.7 45 5.9 48.3 8.7 51.1C11.6 54 14.8 56.2 18.4 57.7C22.2 59.3 26 60 29.9 60C33.9 60 37.7 59.2 41.4 57.7C45.1 56.2 48.4 54 51.4 51.1C54.2 48.4 56.4 45.2 57.8 41.6C59.3 38 60 34.1 60 30C60 25.9 59.3 22.1 57.8 18.5C56.3 14.9 54.2 11.6 51.4 8.8C45.5 2.9 38.3 0 29.9 0ZM30.1 5.4C36.9 5.4 42.7 7.8 47.5 12.6C49.8 14.9 51.6 17.6 52.8 20.5C54 23.5 54.6 26.6 54.6 29.9C54.6 36.8 52.2 42.5 47.6 47.1C45.2 49.5 42.4 51.3 39.4 52.5C36.4 53.8 33.3 54.4 30.1 54.4C26.8 54.4 23.7 53.8 20.8 52.6C17.8 51.3 15.2 49.6 12.8 47.2C10.4 44.8 8.6 42.2 7.3 39.2C6.1 36.2 5.4 33.1 5.4 29.9C5.4 26.6 6 23.5 7.3 20.6C8.6 17.6 10.4 14.9 12.8 12.5C17.4 7.8 23.2 5.4 30.1 5.4Z" fill="currentColor"></path>
+      </symbol>
+    </svg><section class="quire-page frontmatter quire-cover" data-footer-page-title="Cover" id="page-index">
+          <section class="quire-cover__hero hero is-fullheight">
+            <div class="quire-cover__overlay" style="background-image: url(_assets/images/lab-poster.jpg);">
+              <!-- This ensures background image asset gets copied into epub package -->
+              <img class="visually-hidden" src="la-quire/_assets/images/lab-poster.jpg">
+            </div>
+            <div class="quire-cover__hero-body hero-body">
+              <div class="container is-fluid">
+                <h1 class="title" id="page-header-index">
+                  Knossos
+
+                  <span class="visually-hidden">: </span>
+                  <span class="subtitle">Looking for the Labyrinth</span>
+                </h1>
+                <p class="reading-line"></p>
+                <div class="contributor">
+                  <span class="visually-hidden">Contributors: </span>
+
+                  <em><span class="quire-contributor">Andrew Shapland</span></em>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="quire-cover__more next-page">
+            <div class="quire-cover__more-body hero-more">
+              <a href="#page-cover-content">
+                
+                
+              </a>
+            </div>
+          </section>
+
+          <section id="cover-content" class="section quire-page__content">
+            <div class="container is-fluid">
+              <div class="content">
+                <p>
+                  In 2023 the Ashmolean held an exhibition called
+                  <em>Labyrinth: Knossos, Myth &amp; Reality</em>. This is a
+                  resource for the Aegean World gallery based on the
+                  exhibition’s content. It is an output of the AHRC-funded
+                  project ‘Enriching Exhibition Stories: Adding Voices to
+                  Quire’.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          
+        </section><section class="quire-page frontmatter half-title-page" data-footer-page-title="" id="page-pdf-epub-half-title">
+          <section class="half-title">
+            <p>Knossos</p>
+          </section>
+        </section><section class="quire-page frontmatter title-page" data-footer-page-title="" id="page-pdf-epub-title">
+          <section class="title-block">
+            <h1 class="title">Knossos: Looking for the Labyrinth</h1>
+            <p class="contributor">
+              <span class="quire-contributor">Andrew Shapland</span>
+            </p>
+          </section>
+          <section class="publisher-block">
+            <p class="publisher">Ashmolean Museum, University of Oxford</p>
+          </section>
+        </section><section class="quire-page frontmatter copyright-page" data-footer-page-title="" id="page-pdf-epub-copyright">
+          <section class="quire-page__header hero">
+            <div class="hero-body">
+              <h1 class="quire-page__header__title" id="undefined"></h1>
+            </div>
+          </section>
+
+          <section class="section quire-page__content">
+            <div class="container">
+              <div class="content">
+                <div class="quire-copyright">
+                  <img src="la-quire/_assets/images/ash-logo.png" class="copyright__publisher-logo" alt="Ashmolean Museum">
+                  <p>© 2024 Ashmolean Museum, University of Oxford</p>
+                  <a class="quire-copyright__icon__link" href="#page-https-creativecommons-org-licenses-by-4-0" rel="license" target="_blank">
+                    <svg class="quire-copyright__icon">
+                      <use xlink:href="#cc"></use>
+                    </svg>
+                    <svg class="quire-copyright__icon">
+                      <use xlink:href="#by"></use>
+                    </svg>
+                  </a>
+                  <div class="is-screen-only">
+                    This work is licensed under a
+                    <a rel="license" href="#page-https-creativecommons-org-licenses-by-4-0" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+                    <span class="is-print-only">
+                      To view a copy of this license visit
+                      https://creativecommons.org/licenses/by/4.0/.
+                    </span>
+                  </div>
+                  <div class="is-print-only">
+                    This work is licensed under a
+                    <a rel="license" href="#page-https-creativecommons-org-licenses-by-4-0" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+                    <span class="is-print-only">
+                      To view a copy of this license visit
+                      https://creativecommons.org/licenses/by/4.0/.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section quire-page__content">
+            <div class="container">
+              
+            </div>
+          </section>
+        </section><section class="quire-page frontmatter quire-contents" data-footer-page-title="Contents" id="page-contents">
+          <section class="quire-page__header hero">
+            <div class="hero-body">
+              <h1 class="quire-page__header__title" id="contents">Contents</h1>
+            </div>
+          </section>
+
+          <section class="section quire-page__content">
+            <div class="container">
+              <div class="quire-contents-list list">
+                
+                
+                <nav class="table-of-contents menu-list" data-outputs-include="pdf">
+                  <ol class="table-of-contents-list">
+                    <li class="level-0 page-item">
+                      <a href="#page-la-quire-intro">The Aegean World Gallery: The Cretan collection</a>
+                    </li>
+                    <li class="level-0 page-item">
+                      <a href="#page-la-quire-essay">Looking for the Labyrinth: From Myth to Reality</a>
+                    </li>
+                    <li class="level-0 page-item">
+                      <a href="#page-la-quire-essay-2">Life in the Palace: Knossos in the Bronze Age</a>
+                    </li>
+                    <li class="level-0 section-item">
+                      <a href="#page-la-quire-catalogue">Catalogue</a>
+
+                      <ol class="table-of-contents-list">
+                        <li class="level-1 page-item">
+                          <a href="#page-la-quire-catalogue-1">Labyrinth Coin</a>
+                        </li>
+                        <li class="level-1 page-item">
+                          <a href="#page-la-quire-catalogue-2">Theseus and the Minotaur</a>
+                        </li>
+                        <li class="level-1 page-item">
+                          <a href="#page-la-quire-catalogue-3">Minotaur sealstone</a>
+                        </li>
+                        <li class="level-1 page-item">
+                          <a href="#page-la-quire-catalogue-4">Fresco fragment showing bull-leaper</a>
+                        </li>
+                        <li class="level-1 page-item">
+                          <a href="#page-la-quire-catalogue-5">Replica snake goddesses</a>
+                        </li>
+                        <li class="level-1 page-item">
+                          <a href="#page-la-quire-catalogue-6">Bull-leaping ring</a>
+                        </li>
+                        <li class="level-1 page-item">
+                          <a href="#page-la-quire-catalogue-7">Kamares Cup</a>
+                        </li>
+                        <li class="level-1 page-item">
+                          <a href="#page-la-quire-catalogue-8">Floral Cup</a>
+                        </li>
+                        <li class="level-1 page-item">
+                          <a href="#page-la-quire-catalogue-9">Sheep tablet</a>
+                        </li>
+                        <li class="level-1 page-item">
+                          <a href="#page-la-quire-catalogue-10">Textile worker tablet</a>
+                        </li>
+                        <li class="level-1 page-item">
+                          <a href="#page-la-quire-catalogue-11">Octopus Jar</a>
+                        </li>
+                        <li class="level-1 page-item">
+                          <a href="#page-la-quire-catalogue-12">Bull’s Head Rhyton</a>
+                        </li>
+                      </ol>
+                    </li>
+                    <li class="level-0 page-item">
+                      <a href="#page-la-quire-bibliography">Bibliography</a>
+                    </li>
+                    <li class="level-0 page-item">
+                      <a href="#page-la-quire-contributors">Contributors</a>
+                    </li>
+                    <li class="level-0 page-item">
+                      <a href="#page-la-quire-about">About</a>
+                    </li>
+                  </ol>
+                </nav>
+                <div class="content"></div>
+              </div>
+              
+            </div>
+          </section>
+        </section><section class="quire-page frontmatter quire-splash" data-footer-page-title="The Aegean World Gallery" id="page-intro">
+          <section class="quire-page__header hero hero-image" style="background-image: url(_assets/images/figures/gal_20-b.jpg);">
+            <!-- This ensures background image asset gets copied into epub package -->
+            <img class="visually-hidden" src="la-quire/_assets/images/figures/gal_20-b.jpg">
+
+            <div class="hero-body">
+              <h1 class="quire-page__header__title" id="page-header-intro">
+                The Aegean World Gallery: The Cretan collection
+              </h1>
+            </div>
+          </section>
+
+          <section class="section quire-page__content">
+            <div class="container">
+              <div class="content">
+                <p>
+                  Although the vast majority of Minoan antiquities are visible
+                  in Heraklion Archaeological Museum and the other museums on
+                  the island of Crete itself, the Ashmolean Museum holds the
+                  most comprehensive collection outside Greece. This collection
+                  was largely established by one man, Sir Arthur Evans, and is
+                  focused on the archaeological site with which he is closely
+                  associated: Knossos. Visitors to the Museum can see the
+                  highlights of this collection in the Aegean World gallery.
+                  Museum staff are also working to make these objects and their
+                  associated archive accessible online, so they can be viewed
+                  from anywhere in the world. The Aegean World gallery was
+                  opened in 2009 as part of a major refurbishment of the
+                  Ashmolean Museum.<sup class="footnote-ref"><a href="#page-intro-fn1" id="page-intro-fnref1" class="footnote-ref-anchor">1</a></sup>
+                </p>
+                <figure id="ajevans" class="q-figure q-figure--image is-pulled-left">
+                  
+                  
+                  <img alt="" class="q-figure__image" src="la-quire/_assets/images/figures/wa_1907_2-a-S.jpg" data-outputs-include="epub,pdf">
+                  <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                    <span class="q-figure__caption-content"><em>Sir Arthur Evans among the Ruins of the Palace of
+                        Knossos by Sir William Richmond</em>, 1907.</span>
+                    <span class="q-figure__credit">Ashmolean Museum, University of Oxford</span>
+                  </figcaption>
+                </figure>
+                <p>
+                  Although best remembered for his excavations at Knossos, Sir
+                  Arthur Evans was also the Keeper of the Museum from 1884–1908.
+                  The Ashmolean Museum opened to the public in 1683 – the first
+                  museum of its kind in Britain – but it was Evans who oversaw
+                  the collection’s move to its present location. The grand
+                  neoclassical building on Beaumont Street in the centre of
+                  Oxford, designed by Charles Robert Cockerell, was originally
+                  the University Art Galleries. In 1894 the collections were
+                  merged to become the Ashmolean Museum of Art and Archaeology.
+                  This project took up much of the first ten years of Sir Arthur
+                  Evans’s time as Keeper; it was only after this work was
+                  completed that he made his first visit to Crete.<sup class="footnote-ref"><a href="#page-intro-fn2" id="page-intro-fnref2" class="footnote-ref-anchor">2</a></sup>
+                </p>
+                <p>
+                  One of Evans’s aims in visiting Crete was to build up the
+                  Ashmolean collection. He had been brought up with coins and
+                  antiquities from an early age since his father, Sir John
+                  Evans, was a gentleman scholar who had made important
+                  discoveries of prehistoric stone tools and served as President
+                  of the Society of Antiquaries. The family paper business
+                  provided the wealth to allow both father and son to accumulate
+                  personal collections of antiquities, and later to finance the
+                  excavations and restorations at Knossos. After a collecting
+                  trip to Athens in 1893, Arthur Evans became interested in seal
+                  stones bearing what looked like a prehistoric script. These,
+                  he established, originated in Crete, and so he became
+                  determined to visit. His later excavations at Knossos
+                  uncovered further evidence of this script, as well as the clay
+                  sealings that preserved impressions of similar seal stones
+                  used for recording transactions.
+                </p>
+                <p>
+                  Between 1894 and 1899 Evans travelled around Crete, at times
+                  witnessing the aftermath of violence between the Christian and
+                  Muslim populations of the island. A former journalist, he
+                  often sent reports to British newspapers and periodicals, both
+                  on contemporary Crete and its archaeological remains. During
+                  this time he collected a large number of antiquities: at each
+                  village he visited he would ask if there were ‘antikes’ for
+                  sale. The first objects from Knossos in the Ashmolean’s
+                  collection were acquired in this way.<sup class="footnote-ref"><a href="#page-intro-fn3" id="page-intro-fnref3" class="footnote-ref-anchor">3</a></sup>
+                </p>
+                <p>
+                  Evans’s collecting activities were well known to the local
+                  authorities on Crete, and he does not record any attempts to
+                  prevent him from purchasing or exporting antiquities at this
+                  time. He was able to take advantage of the unstable political
+                  situation in Crete, which had gained autonomy but not
+                  independence from the Ottoman Empire. Local officials
+                  generally welcomed foreign archaeologists, particularly those
+                  like Evans who were willing to denounce the Ottoman Empire in
+                  the British press. Ottoman laws governing the export of
+                  antiquities were, seemingly, not observed. In common with many
+                  nineteenth-century scholars, Evans regarded small, portable
+                  antiquities (such as coins and seal stones) as beyond the
+                  scope of antiquities legislation, and so felt entitled to
+                  collect them in any case. Local officials were more focused on
+                  preventing new excavations, in case major antiquities such as
+                  sculptures were dug up and packed off to Constantinople
+                  Museum.
+                </p>
+                <p>
+                  New antiquities laws came into force in 1899, passed by the
+                  government of the newly independent Cretan State. These
+                  allowed Evans to excavate at Knossos but not to export any of
+                  his finds until a change in the law in 1903. Most of the
+                  Ashmolean’s objects from Knossos were exported during the
+                  short period before Crete was unified with Greece in 1913 and
+                  excavators could request ‘useless’ objects for their
+                  collections. A few other significant objects from Knossos were
+                  donated to the Ashmolean by the Government of Greece in 1923
+                  in recognition of Evans’s contribution to archaeological
+                  research, such as the
+                  <a href="#page-la-quire-catalogue-4">bull-leaper fresco</a>.
+                </p>
+                <p>
+                  There were many important or unique objects excavated at
+                  Knossos that Evans was not able to export from Crete: these
+                  went instead to Heraklion Archaeological Museum. Instead he
+                  commissioned replicas of these which could be displayed in the
+                  Ashmolean. The plaster cast of the Throne of Minos and replica
+                  of the Priest King on display in the gallery are two examples,
+                  as well as replicas of smaller items such as the faience
+                  <a href="#page-la-quire-catalogue-5">‘snake goddesses’</a> found
+                  in the Temple Repositories in 1903. Other replicas appear in
+                  the portrait of Sir Arthur Evans that was commissioned in
+                  1907, shortly before he stepped down as Keeper. Although it
+                  shows him among the ruins of Knossos, it was painted in
+                  London, with the replicas providing the artist, Sir William
+                  Richmond, with models for some of the finds.
+                </p>
+                <p>
+                  The Ashmolean was also bequeathed Arthur Evans’s
+                  archaeological archive which includes the original excavation
+                  records for Knossos. It contains over 50 notebooks kept by
+                  Evans and other members of his team, hundreds of drawings of
+                  architecture and finds, and thousands of photos. Some of the
+                  drawings of frescoes were made by Émile Gilliéron, father and
+                  son, as they tried to reconstruct the colourful fragments into
+                  complete designs. Evans drew upon all of these as he wrote up
+                  his excavations at Knossos in the massive four-volume work,
+                  The Palace of Minos, published between 1921 and 1935.<sup class="footnote-ref"><a href="#page-intro-fn4" id="page-intro-fnref4" class="footnote-ref-anchor">4</a></sup>
+                  The archive also includes early drafts and proofs of this
+                  book, and other publications by Evans. But the photos also
+                  provide a glimpse of life during excavation, including the
+                  many Cretan workers employed to work at Knossos and the
+                  excavators themselves posing for the camera.
+                </p>
+                <p>
+                  Fragile archive items cannot be put on long-term display in
+                  the permanent gallery for reasons of conservation, but many of
+                  the objects in the collection are already available on the
+                  Ashmolean’s website, and as database records are checked, more
+                  are being added all the time.
+                </p>
+                <p>
+                  To explore all of the objects in the Aegean World Gallery see
+                  <a href="#page-https-www-ashmolean-org-collections-online-search-simple-search-22aegean-20world-22-7b-7d-1-16-score-desc-catalogue" target="_blank">Ashmolean Collections Online</a>.
+                </p>
+                <figure id="knossos-workers" class="q-figure q-figure--image">
+                  
+                  
+                  <img alt="" class="q-figure__image" src="la-quire/_assets/images/figures/knossos-workers.jpg" data-outputs-include="epub,pdf">
+                  <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                    <span class="q-figure__caption-content">Photograph of Theodore Fyfe and Cretan workmen at
+                      Knossos, 1901</span>
+                    <span class="q-figure__credit">Ashmolean Museum, University of Oxford</span>
+                  </figcaption>
+                </figure>
+                <div class="backmatter">
+                  <h2>Notes</h2>
+                </div>
+                <section class="footnotes">
+                  <ol class="footnotes-list">
+                    <li id="page-intro-fn1" class="footnote-item">
+                      <p>
+                        <cite class="quire-citation expandable"><span class="quire-citation__button" role="button" tabindex="0" aria-expanded="false">Galanakis 2013</span><span class="quire-citation__content" hidden="">Galanakis, Yannis ed.,
+                            <em>The Aegean World: A Guide to the Cycladic, Minoan
+                              and Mycenaean Antiquities in the Ashmolean
+                              Museum</em>, Oxford and Athens, 2013</span></cite>
+                        <a href="#page-intro-fnref1" class="footnote-backref">↩︎</a>
+                      </p>
+                    </li>
+                    <li id="page-intro-fn2" class="footnote-item">
+                      <p>
+                        see
+                        <cite class="quire-citation expandable"><span class="quire-citation__button" role="button" tabindex="0" aria-expanded="false">MacGillivray 2000</span><span class="quire-citation__content" hidden="">MacGillivray, J. Alexander,
+                            <em>Minotaur: Sir Arthur Evans and the Archaeology of
+                              the Minoan Myth</em>, London, 2000</span></cite>
+                        for a recent biography of Evans
+                        <a href="#page-intro-fnref2" class="footnote-backref">↩︎</a>
+                      </p>
+                    </li>
+                    <li id="page-intro-fn3" class="footnote-item">
+                      <p>
+                        <cite class="quire-citation expandable"><span class="quire-citation__button" role="button" tabindex="0" aria-expanded="false">Evans 1921-1935</span><span class="quire-citation__content" hidden="">Evans, Arthur J.,
+                            <em>The Palace of Minos at Knossos</em>, 4 vols,
+                            London, 1921-1935.
+                            <a href="#page-https-digi-ub-uni-heidelberg-de-diglit-evans1921ga" target="_blank">link</a></span></cite>
+                        <a href="#page-intro-fnref3" class="footnote-backref">↩︎</a>
+                      </p>
+                    </li>
+                  </ol>
+                </section>
+
+                <div class="quire-page__content__references backmatter">
+                  <h2>Bibliography</h2>
+                  <dl>
+                    <dt id="brown-2001">Brown 2001</dt>
+                    <dd>
+                      Brown, Ann, ed.,
+                      <em>Arthur Evans’s Travels in Crete, 1894–1899</em>, BAR
+                      international series 1000, Oxford, 2001
+                    </dd>
+
+                    <dt id="evans-1921-1935">Evans 1921-1935</dt>
+                    <dd>
+                      Evans, Arthur J., <em>The Palace of Minos at Knossos</em>,
+                      4 vols, London, 1921-1935.
+                      <a href="#page-https-digi-ub-uni-heidelberg-de-diglit-evans1921ga" target="_blank">link</a>
+                    </dd>
+
+                    <dt id="galanakis-2013">Galanakis 2013</dt>
+                    <dd>
+                      Galanakis, Yannis ed.,
+                      <em>The Aegean World: A Guide to the Cycladic, Minoan and
+                        Mycenaean Antiquities in the Ashmolean Museum</em>, Oxford and Athens, 2013
+                    </dd>
+
+                    <dt id="macgillivray-2000">MacGillivray 2000</dt>
+                    <dd>
+                      MacGillivray, J. Alexander,
+                      <em>Minotaur: Sir Arthur Evans and the Archaeology of the
+                        Minoan Myth</em>, London, 2000
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              
+            </div>
+          </section>
+        </section><section class="quire-page quire-splash page-one" data-footer-page-title="Looking for the Labyrinth" id="page-essay">
+          <section class="quire-page__header hero hero-image" style="background-image: url(_assets/images/figures/hcr4581-rev.jpg);">
+            <!-- This ensures background image asset gets copied into epub package -->
+            <img class="visually-hidden" src="la-quire/_assets/images/figures/hcr4581-rev.jpg">
+
+            <div class="hero-body">
+              <h1 class="quire-page__header__title" id="page-header-essay">
+                Looking for the Labyrinth: From Myth to Reality
+              </h1>
+            </div>
+          </section>
+
+          <section class="section quire-page__content">
+            <section class="section quire-page__abstract">
+              <div class="container">
+                <div class="content">
+                  This article traces how the myth of the Labyrinth inspired
+                  travellers and archaeologists to go in search of the ancient
+                  remains of Knossos, resulting in the discovery of the Palace
+                  of Minos.
+                </div>
+              </div>
+            </section>
+
+            <div class="container">
+              <div class="content">
+                <h2>The Labyrinth in myth and history</h2>
+                <p>
+                  In Greek myth the Minotaur was a monster with the head of a
+                  bull and the body of a man who was imprisoned in a dark
+                  underground Labyrinth at Knossos. The Labyrinth was an
+                  ingenious maze commissioned by King Minos and designed by the
+                  architect Daedalus. In order to escape it after killing the
+                  Minotaur, Theseus needed a ball of thread, given to him by the
+                  princess Ariadne. Or at least that is the most commonly
+                  accepted story – digging deeper into the myth shows that
+                  reveals a multitude of contradictory versions. Myths are
+                  continually reworked and retold, and that of the Labyrinth is
+                  no exception.<sup class="footnote-ref"><a href="#page-essay-fn1" id="page-essay-fnref1" class="footnote-ref-anchor">1</a></sup>
+                </p>
+                <p>
+                  Knossos, on the island of Crete, is mentioned in the earliest
+                  work of Greek literature, Homer’s Iliad, which was composed
+                  some time before 700 BCE. Intriguingly Homer tells us that
+                  Daedalus built a dancing floor for Ariadne at Knossos, but
+                  doesn’t mention the Labyrinth. Herodotus, the earliest Greek
+                  historian, describes an impressive building called a
+                  Labyrinth, but locates it in Egypt, at a city called
+                  Crocodilopolis. Only later did authors locate the Labyrinth at
+                  Knossos. Writing several hundred years later, the Roman
+                  historian Pliny the Elder lists a number of different
+                  Labyrinths, suggesting that the Egyptian building had inspired
+                  Daedalus to build the one in Crete. But of this Cretan
+                  Labyrinth, Pliny says, nothing remained.
+                </p>
+                <p>
+                  At the same time as these different accounts of the Labyrinth
+                  were being written down, artists were producing a variety of
+                  depictions of the myth. Greek vases frequently show
+                  <a href="#page-la-quire-catalogue-2">Theseus killing the Minotaur with a sword</a>. The
+                  <a href="#page-la-quire-catalogue-1">coins of Knossos</a> were
+                  decorated with a symbol of the city: a Labyrinth design which
+                  sometimes had a Minotaur at the centre. This design, unlike
+                  most literary descriptions, has a single path into the centre.
+                  It appears more like a bird’s eye view of a building, and one
+                  in which it is impossible to get lost.
+                </p>
+                <p>
+                  <a href="#page-https-pleiades-stoa-org-places-589872" target="_blank">Knossos</a>
+                  was an important Cretan city in the Greek and Roman period.
+                  When the Roman conquest of Crete began in 69 BCE, its citizens
+                  resisted. As a result the rival city of
+                  <a href="#page-https-pleiades-stoa-org-places-589796" target="_blank">Gortyn</a>, 60 km south of Knossos, became the Roman provincial
+                  capital. New civic buildings were required, and the stone for
+                  these was quarried out of a nearby hillside. This left a
+                  network of underground passages going deep underground. From
+                  this period onwards, authors start to confuse Knossos and
+                  Gortyn, and the location of the Labyrinth started to shift:
+                  the Roman poet, Catullus for instance, refers to the home of
+                  King Minos as ‘Gortynian’. A later Byzantine author, Ioannes
+                  Malalas, described the Labyrinth as a cave near Gortyn.
+                </p>
+                <h2>Looking for the Labyrinth</h2>
+                <p>
+                  The Renaissance renewed interest in Greece and its myths,
+                  resulting in a search for the real Labyrinth. The Florentine
+                  priest, Cristoforo Buondelmonti, first visited Crete in 1415
+                  and explored both Knossos and Gortyn. By this time there was
+                  little to see at Knossos – it had been abandoned following an
+                  earthquake in the 8th century CE – and certainly nothing that
+                  resembled the Labyrinth. Buondelmonti described the
+                  underground passages near Gortyn, and although he recognised
+                  it as a quarry,
+                  <a href="#page-https-digital-bodleian-ox-ac-uk-objects-ef292757-e16f-4818-ae90-f2cbbf9dc5b6-surfaces-5db6a6bd-6c61-4fe7-ba9e-8ca66c344009" target="_blank">his map of the island</a>
+                  shows the Labyrinth as a cave in the middle of the island.
+                </p>
+                <p>
+                  The debate over the location of the true Labyrinth continued
+                  for several hundred years. In the 19th century Captain Thomas
+                  Spratt visited the caves at Gortyn while surveying Crete for a
+                  new map of the island for the British Admiralty. He described
+                  them as “unquestionably a real labyrinth, such as the ancients
+                  understood by that term” and wondered if King Minos had kept
+                  Athenians prisoners there.<sup class="footnote-ref"><a href="#page-essay-fn2" id="page-essay-fnref2" class="footnote-ref-anchor">2</a></sup>
+                  Robert Pashley meanwhile regarded the Labyrinth as “a work of
+                  the imagination” but kept faith with Knossos, despite the fact
+                  that it had “dwindled down into this miserable hamlet”.<sup class="footnote-ref"><a href="#page-essay-fn3" id="page-essay-fnref3" class="footnote-ref-anchor">3</a></sup>
+                  The location of Knossos had never been forgotten since coins
+                  of the city continued to be found there. The problem was that
+                  there was nothing to see there for those going in search of
+                  the Labyrinth.
+                </p>
+                <p>
+                  The argument was finally resolved in 1878 by a local
+                  businessman named, appropriately enough,
+                  <a href="#page-https-en-wikipedia-org-wiki-minos-kalokairinos" target="_blank">Minos Kalokairinos</a>. He had been inspired to dig at Knossos by the excavations
+                  of Heinrich Schliemann at Troy and Mycenae. There Schliemann
+                  had found archaeological treasures which seemed to link these
+                  places with their mythical past. Digging on an area to the
+                  south of the Greek and Roman city, on the bare Kephala hill,
+                  Kalokairinos soon found the remains of a building with curious
+                  symbols carved on the walls. Given its apparent age, he
+                  regarded this as the palace of King Minos, but located the
+                  Labyrinth in a nearby cave at Ayia Irini. This too was an
+                  ancient quarry, and shows Kalokairinos’s faith in the later
+                  literary traditions.
+                </p>
+                <p>
+                  Kalokairinos’s discovery rapidly attracted the attention of
+                  foreign archaeologists. They agreed that the building looked
+                  ancient but went a step further than Kalokairinos and
+                  identified it with the Labyrinth. William Stillman sent a
+                  report to the Archaeological Institute of America describing
+                  the building with its complicated corridors as the “Daedalian
+                  Labyrinth”.<sup class="footnote-ref"><a href="#page-essay-fn4" id="page-essay-fnref4" class="footnote-ref-anchor">4</a></sup>
+                  Kalokairinos had been forced to stop his excavations by the
+                  Cretan authorities because at that time Crete was part of the
+                  Ottoman Empire and it was feared that his finds would be
+                  removed to the museum at Constantinople.
+                </p>
+                <h2>Excavating the Labyrinth</h2>
+                <p>
+                  When Arthur Evans visited Knossos in March 1894, he was shown
+                  round the excavations by Kalokairinos and wrote in his diary
+                  “I see no reason for not thinking that the mysterious
+                  complication of passages is the Labyrinth”.<sup class="footnote-ref"><a href="#page-essay-fn5" id="page-essay-fnref5" class="footnote-ref-anchor">5</a></sup>
+                  He was fascinated by the symbols carved on the walls,
+                  including a sign in the shape of a double axe. By purchasing a
+                  part of the land and waiting until Cretan Independence, Evans
+                  was able to establish the rights to excavate.
+                </p>
+                <figure id="knossos-plan" class="q-figure q-figure--image is-pulled-right">
+                  
+                  
+                  <img alt="" class="q-figure__image" src="la-quire/iiif/knossos-plan/knossos-plan/print-image.jpg" data-outputs-include="epub,pdf">
+                  <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                    <span class="q-figure__caption-content">Plan of Knossos, 1928</span>
+                    <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                  </figcaption>
+                </figure>
+                <p>
+                  Evans uncovered the rest of the labyrinthine building he
+                  called ‘the Palace of Minos’ between 1900 and 1904. A number
+                  of discoveries convinced him that this was indeed the
+                  Labyrinth including
+                  <a href="#page-la-quire-catalogue-4">frescoes of people leaping over bulls</a>
+                  which echoed the myth of the Minotaur. He found further
+                  carvings of double axes and suggested that since an ancient
+                  name for this symbol was ‘labrys’, Labyrinth should mean
+                  ‘House of the Double Axes’. In other words the Palace and the
+                  Labyrinth were one and the same.
+                </p>
+                <h2>Rebuilding the Labyrinth</h2>
+                <p>
+                  Almost immediately, Evans set about restoring, and then
+                  rebuilding, this Bronze Age building, now thought to have
+                  existed from 2000–1350 BC. Some of the later ‘reconstitutions’
+                  as he called them, used reinforced concrete to promote his
+                  theories. The reconstructed bull fresco at the North Entrance,
+                  he suggested, had continued to stand even after the Palace had
+                  been destroyed, inspiring the myth of the Minotaur and the
+                  Labyrinth.
+                </p>
+                <figure id="vid-3d-palace" class="q-figure q-figure--youtube">
+                  
+                  
+                  <div class="q-figure__media-wrapper--widescreen" data-outputs-include="epub,pdf">
+                    <img src="la-quire/_assets/images/figures/3d-model.png">
+                  </div>
+                  <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                    <span class="q-figure__caption-embed-link"><a href="#page-https-youtu-be-otijppf2wue"><em>https://youtu.be/OTIJPPf2wuE</em></a></span>
+                    <span class="q-figure__label q-figure__label--below">
+                      <a class="q-figure__modal-link" href="#page-vid-3d-palace"><span class="q-figure__label-icon">
+                           </span><span class="q-figure__label-text">3d model of Knossos</span></a>
+                    </span>
+                    <span class="q-figure__caption-content">Made by the School of Archaeology, University of
+                      Oxford</span>
+                    <span class="q-figure__credit">University of Oxford</span>
+                  </figcaption>
+                </figure>
+                <p>
+                  Among those inspired by Evans’s reconstructions have been the
+                  designers of the game Assassin’s Creed: Odyssey. Their version
+                  of the Palace of Minos, with the Labyrinth below, shows how
+                  the myth continues to be retold in the 21st century.
+                </p>
+                <figure id="vid-assassins-creed" class="q-figure q-figure--youtube">
+                  
+                  
+                  <div class="q-figure__media-wrapper--widescreen" data-outputs-include="epub,pdf">
+                    <img src="la-quire/_assets/images/figures/assassins-creed.jpg">
+                  </div>
+                  <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                    <span class="q-figure__caption-embed-link"><a href="#page-https-youtu-be-8mfwovnhwbw"><em>https://youtu.be/8mFWOVnHWbw</em></a></span>
+                    <span class="q-figure__label q-figure__label--below">
+                      <a class="q-figure__modal-link" href="#page-vid-assassins-creed"><span class="q-figure__label-icon">
+                           </span><span class="q-figure__label-text">Assassin’s Creed</span></a>
+                    </span>
+                    <span class="q-figure__caption-content">Discovery Tour of Knossos from Assassin’s Creed
+                      Odyssey</span>
+                    <span class="q-figure__credit">© Ubisoft</span>
+                  </figcaption>
+                </figure>
+                <div class="backmatter">
+                  <h2>Notes</h2>
+                </div>
+                <section class="footnotes">
+                  <ol class="footnotes-list">
+                    <li id="page-essay-fn1" class="footnote-item">
+                      <p>
+                        <cite class="quire-citation expandable"><span class="quire-citation__button" role="button" tabindex="0" aria-expanded="false">Momigliano 2020</span><span class="quire-citation__content" hidden="">Momigliano, Nicoletta,
+                            <em>In Search of the Labyrinth: The Cultural Legacy
+                              of Minoan Crete</em>, London 2020</span></cite>
+                        <a href="#page-essay-fnref1" class="footnote-backref">↩︎</a>
+                      </p>
+                    </li>
+                    <li id="page-essay-fn2" class="footnote-item">
+                      <p>
+                        <cite class="quire-citation expandable"><span class="quire-citation__button" role="button" tabindex="0" aria-expanded="false">Spratt 1865, 45</span><span class="quire-citation__content" hidden="">Spratt, Thomas A.B.,
+                            <em>Travels and Researches in Crete</em>, vol.2,
+                            London, 1865.
+                            <a href="#page-https-archive-org-details-travelsresearche02spra" target="_blank">link</a></span></cite>,
+                        <a href="#page-https-archive-org-details-travelsresearche02spra-page-44-mode-2up-view-theater" target="_blank">link</a>
+                        <a href="#page-essay-fnref2" class="footnote-backref">↩︎</a>
+                      </p>
+                    </li>
+                    <li id="page-essay-fn3" class="footnote-item">
+                      <p>
+                        <cite class="quire-citation expandable"><span class="quire-citation__button" role="button" tabindex="0" aria-expanded="false">Pashley 1837, 208-9</span><span class="quire-citation__content" hidden="">Pashley, Robert, <em>Travels in Crete</em>, vol. 1,
+                            London, 1837.
+                            <a href="#page-https-archive-org-details-travelsincrete00pash" target="_blank">link</a></span></cite>,
+                        <a href="#page-https-archive-org-details-travelsincrete00pash-page-n261-mode-2up-view-theater" target="_blank">link</a>
+                        <a href="#page-essay-fnref3" class="footnote-backref">↩︎</a>
+                      </p>
+                    </li>
+                    <li id="page-essay-fn4" class="footnote-item">
+                      <p>
+                        <cite class="quire-citation expandable"><span class="quire-citation__button" role="button" tabindex="0" aria-expanded="false">Stillman 1881, 46</span><span class="quire-citation__content" hidden="">Extracts from Letters of W.J. Stillman, Respecting
+                            Ancient Sites in Crete’, in Archaeological Institute
+                            of America, Second Annual Report of the Executive
+                            Committee, 1880–81, Cambridge, MA, 1881, pp. 41–9.
+                            <a href="#page-https-archive-org-details-acj4305-0001-001-umich-edu" target="_blank">link</a></span></cite>,
+                        <a href="#page-https-archive-org-details-acj4305-0001-001-umich-edu-page-n239-mode-2up-q-stillman-and-view-theater" target="_blank">link</a>
+                        <a href="#page-essay-fnref4" class="footnote-backref">↩︎</a>
+                      </p>
+                    </li>
+                    <li id="page-essay-fn5" class="footnote-item">
+                      <p>
+                        <cite class="quire-citation expandable"><span class="quire-citation__button" role="button" tabindex="0" aria-expanded="false">Brown 2001, 11-12</span><span class="quire-citation__content" hidden="">Brown, Ann, ed.,
+                            <em>Arthur Evans’s Travels in Crete, 1894–1899</em>,
+                            BAR international series 1000, Oxford, 2001</span></cite>,
+                        <a href="#page-https-collections-ashmolean-org-object-915866" target="_blank">link</a>
+                        <a href="#page-essay-fnref5" class="footnote-backref">↩︎</a>
+                      </p>
+                    </li>
+                  </ol>
+                </section>
+
+                <div class="quire-page__content__references backmatter">
+                  <h2>Bibliography</h2>
+                  <dl>
+                    <dt id="brown-2001">Brown 2001</dt>
+                    <dd>
+                      Brown, Ann, ed.,
+                      <em>Arthur Evans’s Travels in Crete, 1894–1899</em>, BAR
+                      international series 1000, Oxford, 2001
+                    </dd>
+
+                    <dt id="momigliano-2020">Momigliano 2020</dt>
+                    <dd>
+                      Momigliano, Nicoletta,
+                      <em>In Search of the Labyrinth: The Cultural Legacy of
+                        Minoan Crete</em>, London 2020
+                    </dd>
+
+                    <dt id="pashley-1837">Pashley 1837</dt>
+                    <dd>
+                      Pashley, Robert, <em>Travels in Crete</em>, vol. 1,
+                      London, 1837.
+                      <a href="#page-https-archive-org-details-travelsincrete00pash" target="_blank">link</a>
+                    </dd>
+
+                    <dt id="spratt-1865">Spratt 1865</dt>
+                    <dd>
+                      Spratt, Thomas A.B.,
+                      <em>Travels and Researches in Crete</em>, vol.2, London,
+                      1865.
+                      <a href="#page-https-archive-org-details-travelsresearche02spra" target="_blank">link</a>
+                    </dd>
+
+                    <dt id="stillman-1881">Stillman 1881</dt>
+                    <dd>
+                      Extracts from Letters of W.J. Stillman, Respecting Ancient
+                      Sites in Crete’, in Archaeological Institute of America,
+                      Second Annual Report of the Executive Committee, 1880–81,
+                      Cambridge, MA, 1881, pp. 41–9.
+                      <a href="#page-https-archive-org-details-acj4305-0001-001-umich-edu" target="_blank">link</a>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              
+            </div>
+          </section>
+        </section><section class="quire-page quire-splash" data-footer-page-title="Life in the Palace" id="page-essay-2">
+          <section class="quire-page__header hero hero-image" style="background-image: url(_assets/images/figures/throne-room.jpg);">
+            <!-- This ensures background image asset gets copied into epub package -->
+            <img class="visually-hidden" src="la-quire/_assets/images/figures/throne-room.jpg">
+
+            <div class="hero-body">
+              <h1 class="quire-page__header__title" id="page-header-essay-2">
+                Life in the Palace: Knossos in the Bronze Age
+              </h1>
+            </div>
+          </section>
+
+          <section class="section quire-page__content">
+            <section class="section quire-page__abstract">
+              <div class="container">
+                <div class="content">
+                  This article provides an introduction to the archaeological
+                  site of Knossos on Crete, highlighting some of the objects on
+                  display in the Aegean World gallery. To explore all of the
+                  objects in the Aegean World Gallery see
+                  <a href="#page-https-www-ashmolean-org-collections-online-search-simple-search-22aegean-20world-22-7b-7d-1-16-score-desc-catalogue" target="_blank">Ashmolean Collections Online</a>.
+                </div>
+              </div>
+            </section>
+
+            <div class="container">
+              <div class="content">
+                <h2>The Palace of Minos</h2>
+                <p>
+                  Between 1900 and 1905, Evans uncovered the remains of the huge
+                  complex which he felt must be the palace of King Minos, and he
+                  adopted the name ‘Minoans’ for its occupants. He employed a
+                  team of archaeologists, local workers, architects and artists,
+                  and together they built up a picture of the community that had
+                  occupied the elaborate building 4000 years ago. The Palace of
+                  Minos, as he called it, had evidently gone through periods of
+                  wealth, destruction, rebuilding, and eventual abandonment.
+                </p>
+                <p>
+                  It is now difficult to disentangle Evans’s vision of the
+                  palace from the reality. Soon after excavation began in 1900,
+                  a room with a stone seat came to light. Evans regarded this as
+                  the throne of King Minos (although he originally wondered if
+                  it was meant for princess Ariadne). The ‘Throne Room’ was
+                  first reconstructed on paper and then physically. It is now is
+                  one of the most famous parts of the Palace.
+                </p>
+                <figure id="throne-room" class="q-figure q-figure--image">
+                  
+                  
+                  <img alt="" class="q-figure__image" src="la-quire/iiif/throne-room/throne-room/print-image.jpg" data-outputs-include="epub,pdf">
+                  <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                    <span class="q-figure__caption-content">Edwin J. Lambert (1881–1928), 1917, Reconstruction
+                      drawing of the Throne Room, watercolour, 38 × 56 cm,
+                      AJE/4/2/2/4/3</span>
+                    <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                  </figcaption>
+                </figure>
+                <h2>Minoan Life: Eating and Drinking</h2>
+                <p>
+                  Elaborate tableware and colourful frescoes are evidence of the
+                  Palace’s wealth, at least at its height. It was a place for
+                  gatherings and celebrations. Wine, meat and olive oil were
+                  produced in the surrounding area and brought to the centre for
+                  consumption. Evans and his team imagined a sophisticated,
+                  nature-loving people, whose civilisation peaked, and then went
+                  into decline. Evans suggested that the finest pottery was used
+                  by a royal family, but there is no clear evidence that one
+                  existed.
+                </p>
+                <p>
+                  The finest pottery was known as
+                  <a href="#page-la-quire-catalogue-7">‘Kamares Ware’</a> since the
+                  first examples were discovered in nearby Kamares Cave. It was
+                  produced in the centuries after the palace was first built,
+                  around 2000-1700 BCE. The black shiny finish and thin walls
+                  seem to imitate silver, which goes black over time. Later on
+                  pottery designs were painted directly on to the surface of the
+                  clay. Some of these designs were abstract but others show
+                  <a href="#page-la-quire-catalogue-8">plants</a> or marine animals.
+                </p>
+                <h2>The Status of Women</h2>
+                <p>
+                  Women appear prominently on frescoes and
+                  <a href="#page-la-quire-catalogue-5">other objects</a> from the
+                  Palace. They often wear elaborate dyed textiles indicating
+                  wealth. Weaving and dyeing were important activities at
+                  Knossos because these textiles were traded beyond the island
+                  of Crete in return for raw materials like metals. It is
+                  possible that these high-status women were important players
+                  in the manufacture and trade in textiles. Some archaeologists
+                  have even suggested that Minoan Crete was a matriarchy, with
+                  women in power. Evans, however, believed that women’s
+                  importance in Minoan society was religious, as priestesses of
+                  a mother goddess.
+                </p>
+                <figure id="ladies-in-blue" class="q-figure q-figure--image">
+                  
+                  
+                  <img alt="" class="q-figure__image" src="la-quire/iiif/ladies-in-blue/ladies-in-blue/print-image.jpg" data-outputs-include="epub,pdf">
+                  <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                    <span class="q-figure__caption-content">Émile Gilliéron père (1850–1924), Restoration of Ladies
+                      in Blue Fresco, undated, watercolour, 95 × 161 cm,
+                      AJE/4/1/12/1/3</span>
+                    <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                  </figcaption>
+                </figure>
+                <p>
+                  The Linear B tablets from Knossos were preserved by fire when
+                  the palace was burnt down in around 1350 BCE. They record an
+                  extensive textile industry in which men were
+                  <a href="#page-la-quire-catalogue-9">shepherds</a> and women were
+                  <a href="#page-la-quire-catalogue-10">textile workers</a>. By this
+                  time there was a king, ‘wanax’ in charge of the palace but it
+                  is not clear how far back this position goes because there are
+                  no historical records preserved. When Linear B was deciphered
+                  by Michael Ventris in 1952 it became apparent that all of the
+                  tablets deal with the economy of the palace.
+                </p>
+                <h2>The Bulls of Crete</h2>
+                <p>
+                  Bulls crop up in several of the myths set in Crete and cattle
+                  were closely associated with the Palace of Minos. They appear
+                  on frescoes and
+                  <a href="#page-la-quire-catalogue-3">seal-stones</a>, and there
+                  were vessels in the shape of their
+                  <a href="#page-la-quire-catalogue-12">heads</a>. Sometimes they
+                  are shown with
+                  <a href="#page-la-quire-catalogue-6">people leaping over their backs</a>. This appears to have been part of an event like a rodeo,
+                  involving the cattle owned by the Palace. Some people have
+                  suggested that this took place in the Central Court. Evans
+                  proposed that bull-leaping inspired the myth of
+                  <a href="#page-catalogue-2">Theseus and the Minotaur</a> because
+                  the images were still visible even after the Palace was
+                  destroyed.
+                </p>
+                <figure id="taureador" class="q-figure q-figure--image">
+                  
+                  
+                  <img alt="" class="q-figure__image" src="la-quire/iiif/taureador/taureador/print-image.jpg" data-outputs-include="epub,pdf">
+                  <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                    <span class="q-figure__caption-content">Emile Gilliéron père (1850–1924), Restoration of
+                      Taureador Fresco</span>
+                    <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                  </figcaption>
+                </figure>
+                <h2>Octopuses</h2>
+                <p>
+                  Some animal images from Knossos are astoundingly lifelike and
+                  detailed.
+                </p>
+                <figure id="ambushed-octopus" class="q-figure q-figure--image is-pulled-right">
+                  
+                  
+                  <img alt="" class="q-figure__image" src="la-quire/iiif/ambushed-octopus/ambushed-octopus/print-image.jpg" data-outputs-include="epub,pdf">
+                  <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                    <span class="q-figure__caption-content">Reconstruction drawing of ‘Ambushed Octopus’ stone
+                      rhyton, undated, Ashmolean Museum AJE/4/3/6/2/1</span>
+                    <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                  </figcaption>
+                </figure>
+                <p>
+                  Octopuses appear frequently – they almost become an emblem of
+                  the Palace. One of the most<br>
+                  unusual facts about them is that they are shown underwater,
+                  their eyes open – as if being watched underwater, as opposed
+                  to looked down on from above. Evans used depictions of marine
+                  animals to trace what he saw as the birth, maturity and
+                  decline of Minoan art. Although few would use these terms
+                  today it is noticeable<br>
+                  that earlier objects are more naturalistic. In the later
+                  period of the Palace’s existence, the same designs – octopuses
+                  and bulls feature frequently – become increasingly stylised.
+                </p>
+                <p>
+                  One of the finest depictions of an octopus was carved in
+                  relief on a stone vessel known as the ‘Ambushed Octopus’.
+                  Designs like these were later transferred to pottery,
+                  particularly
+                  <a href="#page-la-quire-catalogue-11">large jars</a> found in the
+                  storerooms of the palace. Even after the palace was destroyed,
+                  tentacles were still used to decorate vessels.
+                </p>
+              </div>
+              
+            </div>
+          </section>
+        </section><section class="quire-page quire-contents" data-footer-page-title="Catalogue" id="page-catalogue">
+          <section class="quire-page__header hero">
+            <div class="hero-body">
+              <h1 class="quire-page__header__title" id="catalogue">
+                Catalogue
+              </h1>
+            </div>
+          </section>
+
+          <section class="section quire-page__content">
+            <div class="container is-fullhd">
+              <div class="quire-contents-list grid">
+                
+                
+                <nav class="table-of-contents menu-list" data-outputs-include="pdf">
+                  <ol class="table-of-contents-list">
+                    <li class="level-1 page-item">
+                      <a href="#page-la-quire-catalogue-1">
+                        <div class="card image">
+                          <div class="card-image">
+                            <figure class="image">
+                              <img src="la-quire/_assets/images/figures/cat-hcr-4579.jpg" alt="">
+                            </figure>
+                          </div>
+
+                          <div class="card-content">
+                            Labyrinth Coin
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-1 page-item">
+                      <a href="#page-la-quire-catalogue-2">
+                        <div class="card image">
+                          <div class="card-image">
+                            <figure class="image">
+                              <img src="la-quire/_assets/images/figures/g-261.jpg" alt="">
+                            </figure>
+                          </div>
+
+                          <div class="card-content">
+                            Theseus and the Minotaur
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-1 page-item">
+                      <a href="#page-la-quire-catalogue-3">
+                        <div class="card image">
+                          <div class="card-image">
+                            <figure class="image">
+                              <img src="la-quire/_assets/images/figures/an1938_1071.jpg" alt="">
+                            </figure>
+                          </div>
+
+                          <div class="card-content">
+                            Minotaur sealstone
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-1 page-item">
+                      <a href="#page-la-quire-catalogue-4">
+                        <div class="card image">
+                          <div class="card-image">
+                            <figure class="image">
+                              <img src="la-quire/_assets/images/figures/ae_1708.jpg" alt="">
+                            </figure>
+                          </div>
+
+                          <div class="card-content">
+                            Fresco fragment showing bull-leaper
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-1 page-item">
+                      <a href="#page-la-quire-catalogue-5">
+                        <div class="card image">
+                          <div class="card-image">
+                            <figure class="image">
+                              <img src="la-quire/_assets/images/figures/snake-goddesses.jpg" alt="">
+                            </figure>
+                          </div>
+
+                          <div class="card-content">
+                            Replica snake goddesses
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-1 page-item">
+                      <a href="#page-la-quire-catalogue-6">
+                        <div class="card image">
+                          <div class="card-image">
+                            <figure class="image">
+                              <img src="la-quire/_assets/images/figures/cat-ae-2237.jpg" alt="">
+                            </figure>
+                          </div>
+
+                          <div class="card-content">
+                            Bull-leaping ring
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-1 page-item">
+                      <a href="#page-la-quire-catalogue-7">
+                        <div class="card image">
+                          <div class="card-image">
+                            <figure class="image">
+                              <img src="la-quire/_assets/images/figures/an1930_645.jpg" alt="">
+                            </figure>
+                          </div>
+
+                          <div class="card-content">
+                            Kamares Cup
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-1 page-item">
+                      <a href="#page-la-quire-catalogue-8">
+                        <div class="card image">
+                          <div class="card-image">
+                            <figure class="image">
+                              <img src="la-quire/_assets/images/figures/an1938_476.jpg" alt="">
+                            </figure>
+                          </div>
+
+                          <div class="card-content">
+                            Floral Cup
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-1 page-item">
+                      <a href="#page-la-quire-catalogue-9">
+                        <div class="card image">
+                          <div class="card-image">
+                            <figure class="image">
+                              <img src="la-quire/_assets/images/figures/an1938_850.jpg" alt="">
+                            </figure>
+                          </div>
+
+                          <div class="card-content">
+                            Sheep tablet
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-1 page-item">
+                      <a href="#page-la-quire-catalogue-10">
+                        <div class="card image">
+                          <div class="card-image">
+                            <figure class="image">
+                              <img src="la-quire/_assets/images/figures/an1910_214-a.jpg" alt="">
+                            </figure>
+                          </div>
+
+                          <div class="card-content">
+                            Textile worker tablet
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-1 page-item">
+                      <a href="#page-la-quire-catalogue-11">
+                        <div class="card image">
+                          <div class="card-image">
+                            <figure class="image">
+                              <img src="la-quire/_assets/images/figures/octopus-jar.jpg" alt="">
+                            </figure>
+                          </div>
+
+                          <div class="card-content">
+                            Octopus Jar
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-1 page-item">
+                      <a href="#page-la-quire-catalogue-12">
+                        <div class="card image">
+                          <div class="card-image">
+                            <figure class="image">
+                              <img src="la-quire/_assets/images/figures/ae_2400.jpg" alt="">
+                            </figure>
+                          </div>
+
+                          <div class="card-content">
+                            Bull’s Head Rhyton
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ol>
+                </nav>
+                <div class="content"></div>
+              </div>
+              
+            </div>
+          </section>
+        </section><section class="quire-page quire-entry" data-footer-page-title="Labyrinth Coin" data-footer-section-title="Catalogue" id="page-catalogue-1">
+          <div>
+            
+
+            <div class="quire-entry__image-wrap" data-outputs-include="epub,pdf">
+              <figure id="cat-hcr-4579" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/_assets/images/figures/cat-hcr-4579.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">Ancient Greek silver coin.</span>
+                  <span class="q-figure__credit"><p>
+                      Presented by Reverend Charles Godwyn, 1770.<br>
+                      © Ashmolean Museum, University of Oxford
+                    </p>
+                  </span>
+                </figcaption>
+              </figure>
+
+              <figure id="cat-hcr4579-obv" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/iiif/cat-hcr4579-obv/hcr4579obv/print-image.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">Labyrinth coin</span>
+                  <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="quire-entry__content">
+              <header class="quire-entry__header">
+                <div class="container">
+                  <h1 class="quire-page__header__title" id="page-header-catalogue-1">
+                    Labyrinth Coin
+                  </h1>
+                  <div class="quire-page__header__contributor"></div>
+                </div>
+              </header>
+
+              <section class="quire-entry__tombstone">
+                <div class="container">
+                  <table class="table is-fullwidth">
+                    <tbody>
+                      <tr>
+                        <td>Year</td>
+                        <td>300 BC-270 BCE</td>
+                      </tr>
+                      <tr>
+                        <td>Type</td>
+                        <td>Coins</td>
+                      </tr>
+                      <tr>
+                        <td>Dimensions</td>
+                        <td>
+                          Diameter 26 mm; weight 10.8 g; die-axis 9 o’clock.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Materials</td>
+                        <td>silver, struck</td>
+                      </tr>
+                      <tr>
+                        <td>Accession</td>
+                        <td>HCR4579</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a class="button" href="#page-https-collections-ashmolean-org-object-403683" target="_blank">
+                    View in Collection
+                    
+                  </a>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  <div class="content">
+                    <p>
+                      Coins from Knossos, on the island of Crete, were decorated
+                      with a symbol of the city: a labyrinth design which
+                      sometimes had a Minotaur at the centre. The design on the
+                      reverse of this coin, unlike most literary descriptions,
+                      has a single path into the centre. It appears more like a
+                      bird’s eye view of a building, and one in which it is
+                      impossible to get lost.
+                    </p>
+                    <p>
+                      In Greek myth, the Minotaur was a monster with the head of
+                      a bull and the body of a man who was imprisoned in a dark
+                      underground labyrinth at Knossos. The Labyrinth was an
+                      ingenious maze commissioned by King Minos and designed by
+                      the architect Daedalus.
+                    </p>
+                    <p>
+                      In order to escape the maze after killing the Minotaur,
+                      the hero Theseus needed a ball of thread, given to him by
+                      the princess Ariadne. Or at least that is the most
+                      commonly accepted story – digging deeper into the myth
+                      reveals a multitude of contradictory versions. Myths are
+                      continually reworked and retold, and that of the Labyrinth
+                      is no exception.
+                    </p>
+                    <p>
+                      <a href="#page-https-collections-ashmolean-org-object-403692" target="_blank">Another coin</a>
+                      in the same showcase also bears a labyrinth design. This
+                      one is marked ΚΝΩΣΙ (KNOSI), short for ‘of the citizens of
+                      Knossos’. It is evidence of the inhabitants of Knossos
+                      using the Labyrinth as a symbol of their city.
+                    </p>
+                    <figure id="hcr4581" class="q-figure q-figure--image">
+                      
+                      
+                      <img alt="" class="q-figure__image" src="la-quire/_assets/images/figures/hcr4581-rev.jpg" data-outputs-include="epub,pdf">
+                      <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                        <span class="q-figure__caption-content">Ancient silver coin from Knossos showing the
+                          Labyrinth, c.300–270 BCE, HCR4581,</span>
+                        <span class="q-figure__credit">on loan from Keble College, Oxford</span>
+                      </figcaption>
+                    </figure>
+                    <div class="backmatter">
+                      <h2>Further reading</h2>
+                      <p>
+                        Heuchert, Volker. ‘Ancient Silver Coin from Knossos
+                        showing the Labyrinth’, in A. Shapland (ed.),
+                        <em>Labyrinth: Knossos, Myth &amp; Reality</em> (Oxford:
+                        Ashmolean Museum), p. 64-65.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  
+                </div>
+              </section>
+            </div>
+          </div>
+        </section><section class="quire-page quire-entry" data-footer-page-title="Theseus and the Minotaur" data-footer-section-title="Catalogue" id="page-catalogue-2">
+          <div class="side-by-side">
+            
+
+            <div class="quire-entry__image-wrap" data-outputs-include="epub,pdf">
+              <figure id="g-261" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/_assets/images/figures/g-261.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">Attic red-figure cup depicting Theseus and the
+                    Minotaur.</span>
+                  <span class="q-figure__credit">© Ashmolean Museum, University of Oxford</span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="quire-entry__content">
+              <header class="quire-entry__header">
+                <div class="container">
+                  <h1 class="quire-page__header__title" id="page-header-catalogue-2">
+                    Theseus and the Minotaur
+                  </h1>
+                  <div class="quire-page__header__contributor"></div>
+                </div>
+              </header>
+
+              <section class="quire-entry__tombstone">
+                <div class="container">
+                  <table class="table is-fullwidth">
+                    <tbody>
+                      <tr>
+                        <td>Year</td>
+                        <td>circa 500 BC (Archaic Period)</td>
+                      </tr>
+                      <tr>
+                        <td>Dimensions</td>
+                        <td>
+                          Height 8.1 cm; rim diameter 20 cm; foot diameter 8 cm;
+                          width 26.7 cm; rim thickness 0.3 cm.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Materials</td>
+                        <td>Pottery, with painted decoration.</td>
+                      </tr>
+                      <tr>
+                        <td>Accession</td>
+                        <td>AN1896-1908.G.261</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  <div class="content">
+                    <p>
+                      On this red-figure cup we see Theseus lunge at the
+                      Minotaur, grabbing him by the horn with his left hand and
+                      attempting to stab him with the sword held in his right
+                      hand.
+                    </p>
+                    <p>
+                      In Greek myth, Theseus was the semi-divine hero who killed
+                      the Minotaur, a monster with the head of a bull and the
+                      body of a man confined in a Labyrinth on the island of
+                      Crete. The Labyrinth was an ingenious maze commissioned by
+                      King Minos. Following his defeat, Theseus returned to
+                      Greece, and became king and the founder of Athens.
+                    </p>
+                    <p>
+                      The cup has been reassembled from a group of separate
+                      fragments with added plaster, and so parts of the
+                      decoration are modern.
+                    </p>
+                    <p>
+                      Another
+                      <a href="#page-https-collections-ashmolean-org-object-386735" target="_blank">vase</a>
+                      in the Greece Gallery shows an earlier version of the same
+                      scene.
+                    </p>
+                    <figure id="cat-an1918-64" class="q-figure q-figure--image">
+                      
+                      
+                      <img alt="" class="q-figure__image" src="la-quire/iiif/cat-an1918-64/an1918_64/print-image.jpg" data-outputs-include="epub,pdf">
+                      <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                        <span class="q-figure__caption-content">Attic black-figure amphora depicting Theseus and the
+                          Minotaur, c.550 BCE. AN1918.64</span>
+                        <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  
+                </div>
+              </section>
+            </div>
+          </div>
+        </section><section class="quire-page quire-entry" data-footer-page-title="Minotaur sealstone" data-footer-section-title="Catalogue" id="page-catalogue-3">
+          <div class="side-by-side">
+            
+
+            <div class="quire-entry__image-wrap" data-outputs-include="epub,pdf">
+              <figure id="cat-an1938-1071" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/iiif/cat-an1938-1071/an1938_1071/print-image.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">Sealstone with ‘minotaur’ design</span>
+                  <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="quire-entry__content">
+              <header class="quire-entry__header">
+                <div class="container">
+                  <h1 class="quire-page__header__title" id="page-header-catalogue-3">
+                    Minotaur sealstone
+                  </h1>
+                  <div class="quire-page__header__contributor"></div>
+                </div>
+              </header>
+
+              <section class="quire-entry__tombstone">
+                <div class="container">
+                  <table class="table is-fullwidth">
+                    <tbody>
+                      <tr>
+                        <td>Dimensions</td>
+                        <td>dia. 2.4cm</td>
+                      </tr>
+                      <tr>
+                        <td>Materials</td>
+                        <td>lapis lacedaemonius</td>
+                      </tr>
+                      <tr>
+                        <td>Accession</td>
+                        <td>AN1938.1071</td>
+                      </tr>
+                      <tr>
+                        <td>Findspot</td>
+                        <td>Psychro Cave</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a class="button" href="#page-https-collections-ashmolean-org-object-479437" target="_blank">
+                    View in Collection
+                    
+                  </a>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  <div class="content">
+                    <p>
+                      This is one of a number of ‘minotaur’ seals collected by
+                      Sir Arthur Evans on his travels around Crete. He suggested
+                      that designs such as this, with the head of a bull and the
+                      legs of a human, could have inspired later coins from
+                      Knossos showing the Minotaur. It is now believed that the
+                      image was an abbreviated depiction of bull-leaping which
+                      was subsequently misinterpreted.
+                    </p>
+                    <p>
+                      A page of Sir Arthur Evans’s notebook compares depictions
+                      of the minotaur on sealstones and later coins.
+                    </p>
+                    <figure id="cat-aje121278" class="q-figure q-figure--image">
+                      
+                      
+                      <img alt="" class="q-figure__image" src="la-quire/iiif/cat-aje121278/gb1648aje1212784/print-image.jpg" data-outputs-include="epub,pdf">
+                      <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                        <span class="q-figure__caption-content">Page from Sir Arthur Evans’s notebook, c. 1894 on
+                          minotaur coins and seals</span>
+                        <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                      </figcaption>
+                    </figure>
+                    <div class="backmatter">
+                      <h2>Further reading</h2>
+                      <p>
+                        Shapland, A.J. 2013. ‘Jumping to conclusions:
+                        bull-leaping in Minoan Crete’,
+                        <em>Society and Animals</em> 21: 194-207
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  
+                </div>
+              </section>
+            </div>
+          </div>
+        </section><section class="quire-page quire-entry" data-footer-page-title="Fresco fragment showing bull-leaper" data-footer-section-title="Catalogue" id="page-catalogue-4">
+          <div class="side-by-side">
+            
+
+            <div class="quire-entry__image-wrap" data-outputs-include="epub,pdf">
+              <figure id="cat-ae-1708" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/_assets/images/figures/ae_1708.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">Fresco fragment showing bullleaper, 1450–1400 BCE</span>
+                  <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="quire-entry__content">
+              <header class="quire-entry__header">
+                <div class="container">
+                  <h1 class="quire-page__header__title" id="page-header-catalogue-4">
+                    Fresco fragment showing bull-leaper
+                  </h1>
+                  <div class="quire-page__header__contributor"></div>
+                </div>
+              </header>
+
+              <section class="quire-entry__tombstone">
+                <div class="container">
+                  <table class="table is-fullwidth">
+                    <tbody>
+                      <tr>
+                        <td>Year</td>
+                        <td>1450–1400 BCE</td>
+                      </tr>
+                      <tr>
+                        <td>Dimensions</td>
+                        <td>61 × 30 cm</td>
+                      </tr>
+                      <tr>
+                        <td>Materials</td>
+                        <td>painted plaster</td>
+                      </tr>
+                      <tr>
+                        <td>Accession</td>
+                        <td>AN1896-1908.AE.1708</td>
+                      </tr>
+                      <tr>
+                        <td>Findspot</td>
+                        <td>Knossos</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a class="button" href="#page-https-collections-ashmolean-org-object-477147" target="_blank">
+                    View in Collection
+                    
+                  </a>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  <div class="content">
+                    <p>
+                      This original fresco fragment belonged to one of the
+                      bull-leaping panels related to the ‘Taureador Fresco’. It
+                      shows an acrobat who has successfully completed their
+                      jump. Sir Arthur Evans believed that the white skin
+                      indicated a female athlete, following a convention used in
+                      Egyptian wall paintings. It is more likely that the skin
+                      colour, along with the elaborate hairstyle, depicts
+                      relative status – paler skin suggested less time spent
+                      outside.
+                    </p>
+                    <figure id="taureador" class="q-figure q-figure--image">
+                      
+                      
+                      <img alt="" class="q-figure__image" src="la-quire/iiif/taureador/taureador/print-image.jpg" data-outputs-include="epub,pdf">
+                      <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                        <span class="q-figure__caption-content">Emile Gilliéron père (1850–1924), Restoration of
+                          Taureador Fresco</span>
+                        <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                      </figcaption>
+                    </figure>
+                    <div class="backmatter">
+                      <h2>Further reading</h2>
+                      <p>
+                        Shapland, A.J. 2013. ‘Jumping to conclusions:
+                        bull-leaping in Minoan Crete’,
+                        <em>Society and Animals</em> 21: 194-207
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  
+                </div>
+              </section>
+            </div>
+          </div>
+        </section><section class="quire-page quire-entry" data-footer-page-title="Replica snake goddesses" data-footer-section-title="Catalogue" id="page-catalogue-5">
+          <div>
+            
+
+            <div class="quire-entry__image-wrap" data-outputs-include="epub,pdf">
+              <figure id="snake-goddesses" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/iiif/snake-goddesses/snake-goddesses/print-image.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">Replica snake goddesses</span>
+                  <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                </figcaption>
+              </figure>
+
+              <figure id="cat-ae-1106" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/iiif/cat-ae-1106/ae_1106/print-image.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">Replica Snake Goddess</span>
+                  <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                </figcaption>
+              </figure>
+
+              <figure id="cat-ae-1114" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/iiif/cat-ae-1114/ae_1114/print-image.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">Replica Snake Goddess (Votary)</span>
+                  <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="quire-entry__content">
+              <header class="quire-entry__header">
+                <div class="container">
+                  <h1 class="quire-page__header__title" id="page-header-catalogue-5">
+                    Replica snake goddesses
+                  </h1>
+                  <div class="quire-page__header__contributor"></div>
+                </div>
+              </header>
+
+              <section class="quire-entry__tombstone">
+                <div class="container">
+                  <table class="table is-fullwidth">
+                    <tbody>
+                      <tr>
+                        <td>Year</td>
+                        <td>c.1903</td>
+                      </tr>
+                      <tr>
+                        <td>Creator</td>
+                        <td>Halvor Bagge</td>
+                      </tr>
+                      <tr>
+                        <td>Dimensions</td>
+                        <td>29-34 cm height</td>
+                      </tr>
+                      <tr>
+                        <td>Materials</td>
+                        <td>plaster</td>
+                      </tr>
+                      <tr>
+                        <td>Accession</td>
+                        <td>AN1896-1908.AE.1106, AN1896-1908.AE.1114</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a class="button" href="#page-https-collections-ashmolean-org-object-561573" target="_blank">
+                    View in Collection
+                    
+                  </a>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  <div class="content">
+                    <p>
+                      The famous Snake Goddesses from Knossos were found in many
+                      fragments and reconstructed to create the forms known
+                      today. Arthur Evans originally identified the figure with
+                      her arms down, holding snakes, as the Goddess. The figure
+                      with her arms raised was originally known as the ‘votary’.
+                      A cat was found in the same deposit but it is unlikely to
+                      have adorned the votary’s headdress, as here. These
+                      plaster replicas are not authentic copies of an original,
+                      but a modern reconstruction.
+                    </p>
+                    <p>
+                      The originals were found in an underfloor deposit in the
+                      palace of Knossos, known as the ‘Temple Repositories’. Its
+                      contents dated to around 1600 BCE. Many of the objects,
+                      including the Snake Goddesses, were made of a glassy
+                      material known as faience.
+                    </p>
+                    <figure id="temple-repositories" class="q-figure q-figure--image">
+                      
+                      
+                      <img alt="" class="q-figure__image" src="la-quire/iiif/temple-repositories/temple-repositories/print-image.jpg" data-outputs-include="epub,pdf">
+                      <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                        <span class="q-figure__caption-content">Photograph of the Temple Repositories contents, c.
+                          1903</span>
+                        <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                      </figcaption>
+                    </figure>
+                    <div class="backmatter">
+                      <h2>Further reading</h2>
+                      <p>
+                        The
+                        <a href="#page-https-mansil-uk-snake-goddesses-labyrinth" target="_blank">Many Lives of a Snake Goddess project</a>
+                        looks at these famous objects from a variety of
+                        different perspectives
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  
+                </div>
+              </section>
+            </div>
+          </div>
+        </section><section class="quire-page quire-entry" data-footer-page-title="Bull-leaping ring" data-footer-section-title="Catalogue" id="page-catalogue-6">
+          <div>
+            
+
+            <div class="quire-entry__image-wrap" data-outputs-include="epub,pdf">
+              <figure id="cat-ae-2237" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/_assets/images/figures/cat-ae-2237.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">Seal ring showing bull-leaping scene.</span>
+                  <span class="q-figure__credit"><p>
+                      Presented by Sir Arthur Evans, 1938.<br>
+                      © Ashmolean Museum, University of Oxford
+                    </p>
+                  </span>
+                </figcaption>
+              </figure>
+
+              <figure id="cat-ae-2237b" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/iiif/cat-ae-2237b/cat-ae-2237b/print-image.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">Seal ring showing bull-leaping scene.</span>
+                  <span class="q-figure__credit"><p>
+                      Presented by Sir Arthur Evans, 1938.<br>
+                      © Ashmolean Museum, University of Oxford
+                    </p>
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="quire-entry__content">
+              <header class="quire-entry__header">
+                <div class="container">
+                  <h1 class="quire-page__header__title" id="page-header-catalogue-6">
+                    Bull-leaping ring
+                  </h1>
+                  <div class="quire-page__header__contributor"></div>
+                </div>
+              </header>
+
+              <section class="quire-entry__tombstone">
+                <div class="container">
+                  <table class="table is-fullwidth">
+                    <tbody>
+                      <tr>
+                        <td>Year</td>
+                        <td>
+                          c. 1450 BC - c. 1375 BC (Late Minoan II Period - Late
+                          Minoan IIIA1 Period)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Type</td>
+                        <td>Signet rings</td>
+                      </tr>
+                      <tr>
+                        <td>Dimensions</td>
+                        <td>Height 2.3 cm; width 3.5 cm; diameter 2.2 cm.</td>
+                      </tr>
+                      <tr>
+                        <td>Materials</td>
+                        <td>gold</td>
+                      </tr>
+                      <tr>
+                        <td>Accession</td>
+                        <td>AN1896-1908.AE.2237</td>
+                      </tr>
+                      <tr>
+                        <td>Findspot</td>
+                        <td>Archanes</td>
+                      </tr>
+                      <tr>
+                        <td>Description</td>
+                        <td>
+                          This gold ring shows a man leaping over a bull. The
+                          paved floor indicates that this took place in or
+                          around the Palace. The object in front of the bull is
+                          probably a folded garment of cloth or leather but its
+                          significance is not clear. 1450–1375 BCE, gold said to
+                          be from Archanes.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a class="button" href="#page-https-collections-ashmolean-org-object-478087" target="_blank">
+                    View in Collection
+                    
+                  </a>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  <div class="content">
+                    <p>
+                      Cattle were important animals in Bronze Age Crete. In the
+                      absence of natural predators they were probably left to
+                      roam around the island and then rounded up when needed.
+                      Bull-leaping seems to have emerged from this way of
+                      managing cattle, like the American rodeo. A gold ring like
+                      this was used as a signet ring, to leave an impression in
+                      clay documents as a form of signature. Perhaps its wearer
+                      had distinguished themselves as a bull-leaper.
+                    </p>
+                    <div class="backmatter">
+                      <h2>Further reading</h2>
+                      <p>
+                        Shapland, A.J. 2013. ‘Jumping to conclusions:
+                        bull-leaping in Minoan Crete’,
+                        <em>Society and Animals</em> 21: 194-207
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  
+                </div>
+              </section>
+            </div>
+          </div>
+        </section><section class="quire-page quire-entry" data-footer-page-title="Kamares Cup" data-footer-section-title="Catalogue" id="page-catalogue-7">
+          <div>
+            
+
+            <div class="quire-entry__image-wrap" data-outputs-include="epub,pdf">
+              <figure id="cat-an1930-645" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/iiif/cat-an1930.645/an1930_645/print-image.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">Two-handled spouted cup, 1800-1750 BCE, Ashmolean Museum
+                    AN1930.645</span>
+                  <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="quire-entry__content">
+              <header class="quire-entry__header">
+                <div class="container">
+                  <h1 class="quire-page__header__title" id="page-header-catalogue-7">
+                    Kamares Cup
+                  </h1>
+                  <div class="quire-page__header__contributor"></div>
+                </div>
+              </header>
+
+              <section class="quire-entry__tombstone">
+                <div class="container">
+                  <table class="table is-fullwidth">
+                    <tbody>
+                      <tr>
+                        <td>Dimensions</td>
+                        <td>h. 6 cm, dia. 18 cm</td>
+                      </tr>
+                      <tr>
+                        <td>Materials</td>
+                        <td>ceramic</td>
+                      </tr>
+                      <tr>
+                        <td>Accession</td>
+                        <td>AN1930.645</td>
+                      </tr>
+                      <tr>
+                        <td>Findspot</td>
+                        <td>Knossos</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a class="button" href="#page-https-collections-ashmolean-org-object-477009" target="_blank">
+                    View in Collection
+                    
+                  </a>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  <div class="content">
+                    <p>
+                      This cup, with its thin crinkled sides and shiny surface
+                      was designed to imitate a metal vessel. The black slip and
+                      white paint perhaps indicate a silver vessel which has
+                      tarnished (turned black) after reacting with the oxygen in
+                      the air.
+                    </p>
+                    <p>
+                      Pottery of this kind was found in the Kamares Cave in
+                      Crete in 1893 by a local shepherd and brought to the
+                      museum at Heraklion. There it was seen by John Myres, an
+                      archaeologist who had recently excavated similar pottery
+                      in Egypt. Since Egyptian chronology was well known, this
+                      meant that it could be dated to the early second
+                      millennium BCE. When Arthur Evans began excavating at
+                      Knossos in 1900, he was able to use ‘Kamares Ware’ as a
+                      means to date the levels of the Palace in which this
+                      pottery was found.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  
+                </div>
+              </section>
+            </div>
+          </div>
+        </section><section class="quire-page quire-entry" data-footer-page-title="Floral Cup" data-footer-section-title="Catalogue" id="page-catalogue-8">
+          <div>
+            
+
+            <div class="quire-entry__image-wrap" data-outputs-include="epub,pdf">
+              <figure id="cat-an1938-476" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/iiif/cat-an1938.476/an1938_476/print-image.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">One-handled cup decorated with floral designs, 1500-1450
+                    BCE, Ashmolean Museum AN1938.476</span>
+                  <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="quire-entry__content">
+              <header class="quire-entry__header">
+                <div class="container">
+                  <h1 class="quire-page__header__title" id="page-header-catalogue-8">
+                    Floral Cup
+                  </h1>
+                  <div class="quire-page__header__contributor"></div>
+                </div>
+              </header>
+
+              <section class="quire-entry__tombstone">
+                <div class="container">
+                  <table class="table is-fullwidth">
+                    <tbody>
+                      <tr>
+                        <td>Dimensions</td>
+                        <td>h. 8.9 cm, dia. 11.4 cm</td>
+                      </tr>
+                      <tr>
+                        <td>Materials</td>
+                        <td>ceramic</td>
+                      </tr>
+                      <tr>
+                        <td>Accession</td>
+                        <td>AN1938.476</td>
+                      </tr>
+                      <tr>
+                        <td>Findspot</td>
+                        <td>Knossos</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a class="button" href="#page-https-collections-ashmolean-org-object-477443" target="_blank">
+                    View in Collection
+                    
+                  </a>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  <div class="content">
+                    <p>
+                      This cup is decorated with stylised flowers, which
+                      resemble those of an olive tree. The paint has been
+                      directly applied to the bare surface of the vessel before
+                      firing resulting in a ‘dark-on-light’ design, which
+                      becomes prevalent in this period. The cup has a spout
+                      which suggests that it could have been used for pouring as
+                      well as drinking.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  
+                </div>
+              </section>
+            </div>
+          </div>
+        </section><section class="quire-page quire-entry" data-footer-page-title="Sheep tablet" data-footer-section-title="Catalogue" id="page-catalogue-9">
+          <div>
+            
+
+            <div class="quire-entry__image-wrap" data-outputs-include="epub,pdf">
+              <figure id="cat-an1938-850" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/iiif/cat-an1938.850/an1938_850/print-image.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">Leaf-shaped Linear B tablet recording sheep, c.1350 BCE,
+                    Ashmolean Museum AN1938.850</span>
+                  <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="quire-entry__content">
+              <header class="quire-entry__header">
+                <div class="container">
+                  <h1 class="quire-page__header__title" id="page-header-catalogue-9">
+                    Sheep tablet
+                  </h1>
+                  <div class="quire-page__header__contributor"></div>
+                </div>
+              </header>
+
+              <section class="quire-entry__tombstone">
+                <div class="container">
+                  <table class="table is-fullwidth">
+                    <tbody>
+                      <tr>
+                        <td>Dimensions</td>
+                        <td>l. 11.8 cm, h. 2.6 cm</td>
+                      </tr>
+                      <tr>
+                        <td>Materials</td>
+                        <td>ceramic</td>
+                      </tr>
+                      <tr>
+                        <td>Accession</td>
+                        <td>AN1938.850</td>
+                      </tr>
+                      <tr>
+                        <td>Findspot</td>
+                        <td>Knossos</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a class="button" href="#page-https-collections-ashmolean-org-object-476207" target="_blank">
+                    View in Collection
+                    
+                  </a>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  <div class="content">
+                    <p>
+                      Leaf-shaped Linear B tablet. It is a typical
+                      ‘sheep-tablet’ recording the shepherd (Anthemos or
+                      Artemos), the owner or collector (wewesijojo, in genitive
+                      that indicates possession), the place were the flock is
+                      herded (kutato) and the number of male and female sheep;
+                      there is also an ‘opero’ (shortage) of 50 male sheep.
+                    </p>
+                    <figure id="cat-an1938-850-drawing" class="q-figure q-figure--image">
+                      
+                      
+                      <img alt="" class="q-figure__image" src="la-quire/iiif/cat-an1938.850-drawing/AN1938_850-drawing/print-image.jpg" data-outputs-include="epub,pdf">
+                      <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                        <span class="q-figure__caption-content">Drawing of leaf-shaped Linear B tablet recording
+                          sheep, c.1350 BCE, Ashmolean Museum AN1938.850</span>
+                        <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                      </figcaption>
+                    </figure>
+                    <p>
+                      The transcription is given here. De 1648 is its unique
+                      reference number among all the tablets found at Knossos.
+                      117 refers to the person who wrote it, identified by their
+                      handwriting. OVIS is latin for sheep (labelled as both
+                      male and female), which is a convention for transcribing
+                      tablets. The syllables refer to the sounds of the Linear B
+                      signs.
+                    </p>
+                    <p>
+                      De 1648 ASHM (1938.850) (117)<br>
+                      .A we-we-si-jo-jo , OVISm 58 OVISf 2<br>
+                      .B a-te-mo , / ku-ta-to o OVISm 50
+                    </p>
+                    <div class="backmatter">
+                      <h2>Further reading</h2>
+                      <p>
+                        Bendall, Lisa. ‘Two Linear B Tablets from Knossos’, in
+                        A. Shapland (ed.),
+                        <em>Labyrinth: Knossos, Myth &amp; Reality</em> (Oxford:
+                        Ashmolean Museum), p. 160-1.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  
+                </div>
+              </section>
+            </div>
+          </div>
+        </section><section class="quire-page quire-entry" data-footer-page-title="Textile worker tablet" data-footer-section-title="Catalogue" id="page-catalogue-10">
+          <div>
+            
+
+            <div class="quire-entry__image-wrap" data-outputs-include="epub,pdf">
+              <figure id="cat-an1910-214-a" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/iiif/cat-an1910.214-a/an1910_214-a/print-image.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">Linear B tablet recording grain rations for women workers
+                    at Knossos, c.1350 BCE, Ashmolean Museum AN1910.214</span>
+                  <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                </figcaption>
+              </figure>
+
+              <figure id="cat-an1910-214-b" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/iiif/cat-an1910.214-b/an1910_214-b/print-image.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">Linear B tablet recording grain rations for women workers
+                    at Knossos, c.1350 BCE, Ashmolean Museum AN1910.214</span>
+                  <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="quire-entry__content">
+              <header class="quire-entry__header">
+                <div class="container">
+                  <h1 class="quire-page__header__title" id="page-header-catalogue-10">
+                    Textile worker tablet
+                  </h1>
+                  <div class="quire-page__header__contributor"></div>
+                </div>
+              </header>
+
+              <section class="quire-entry__tombstone">
+                <div class="container">
+                  <table class="table is-fullwidth">
+                    <tbody>
+                      <tr>
+                        <td>Dimensions</td>
+                        <td>l. 8.1 cm, h. 4.5 cm</td>
+                      </tr>
+                      <tr>
+                        <td>Materials</td>
+                        <td>ceramic</td>
+                      </tr>
+                      <tr>
+                        <td>Accession</td>
+                        <td>AN1910.214</td>
+                      </tr>
+                      <tr>
+                        <td>Findspot</td>
+                        <td>Knossos</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a class="button" href="#page-https-collections-ashmolean-org-object-478598" target="_blank">
+                    View in Collection
+                    
+                  </a>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  <div class="content">
+                    <p>
+                      Page-shaped Linear B tablet recording grain rations for
+                      women workers at Knossos; the lunar sign on the left side
+                      of the tablet indicates that the women workers received
+                      their rations on a monthly basis (also existence of some
+                      sort of calendar); whole text probably a palimpsest;
+                      writing also appears at the back.
+                    </p>
+                    <figure id="cat-an1910-214-a-drawing" class="q-figure q-figure--image">
+                      
+                      
+                      <img alt="" class="q-figure__image" src="la-quire/iiif/cat-an1910.214-a-drawing/an1910_214-a-drawing/print-image.jpg" data-outputs-include="epub,pdf">
+                      <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                        <span class="q-figure__caption-content">Drawing of Linear B tablet recording grain rations
+                          for women workers at Knossos, c.1350 BCE, Ashmolean
+                          Museum AN1910.214</span>
+                        <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                      </figcaption>
+                    </figure>
+                    <figure id="cat-an1910-214-b-drawing" class="q-figure q-figure--image">
+                      
+                      
+                      <img alt="" class="q-figure__image" src="la-quire/iiif/cat-an1910.214-b-drawing/an1910_214-b-drawing/print-image.jpg" data-outputs-include="epub,pdf">
+                      <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                        <span class="q-figure__caption-content">Drawing of Linear B tablet recording grain rations
+                          for women workers at Knossos, c.1350 BCE, Ashmolean
+                          Museum AN1910.214</span>
+                        <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                      </figcaption>
+                    </figure>
+                    <p>
+                      The transcription is given here. E777 is its unique
+                      reference number among all the tablets found at Knossos.
+                      LUNA is latin for moon and GRA for wheat, which is a
+                      convention for transcribing tablets. These are the monthly
+                      wheat rations. The syllables refer to the sounds of the
+                      Linear B signs.
+                    </p>
+                    <p>
+                      E777 ASHM (1910.214) ( - )<br>
+                      .1 ko-no-si-ja / ki-ri-te-wi-ja-i LUNA 1 GRA 100[<br>
+                      .2 a-mi-ni-si-ja LUNA 1 GRA 100 [<br>
+                      .3 pa-i-ti-ja LUNA 1 GRA 100[<br>
+                      verso<br>
+                      .1 a-ze-ti-ri-ja GRA 1…0…[
+                    </p>
+                    <div class="backmatter">
+                      <h2>Further reading</h2>
+                      <p>
+                        Bendall, Lisa. ‘Two Linear B Tablets from Knossos’, in
+                        A. Shapland (ed.),
+                        <em>Labyrinth: Knossos, Myth &amp; Reality</em> (Oxford:
+                        Ashmolean Museum), p. 160-1.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  
+                </div>
+              </section>
+            </div>
+          </div>
+        </section><section class="quire-page quire-entry" data-footer-page-title="Octopus Jar" data-footer-section-title="Catalogue" id="page-catalogue-11">
+          <div>
+            
+
+            <div class="quire-entry__image-wrap" data-outputs-include="epub,pdf">
+              <figure id="octopus-jar" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/iiif/octopus-jar/octopus-jar/print-image.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">Jar with octopus motif, 1450-1400 BCE, Ashmolean Museum
+                    AN1911.608</span>
+                  <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                </figcaption>
+              </figure>
+
+              <figure id="octopus-jar-drawing" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/iiif/octopus-jar-drawing/octopus-jar-drawing/print-image.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">Drawing of jar with octopus motif, 1450-1400 BCE, Ashmolean
+                    Museum AN1911.608</span>
+                  <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="quire-entry__content">
+              <header class="quire-entry__header">
+                <div class="container">
+                  <h1 class="quire-page__header__title" id="page-header-catalogue-11">
+                    Octopus Jar
+                  </h1>
+                  <div class="quire-page__header__contributor"></div>
+                </div>
+              </header>
+
+              <section class="quire-entry__tombstone">
+                <div class="container">
+                  <table class="table is-fullwidth">
+                    <tbody>
+                      <tr>
+                        <td>Dimensions</td>
+                        <td>h. 74.5 cm</td>
+                      </tr>
+                      <tr>
+                        <td>Materials</td>
+                        <td>ceramic</td>
+                      </tr>
+                      <tr>
+                        <td>Accession</td>
+                        <td>AN1911.608</td>
+                      </tr>
+                      <tr>
+                        <td>Findspot</td>
+                        <td>Knossos</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a class="button" href="#page-https-collections-ashmolean-org-object-464723" target="_blank">
+                    View in Collection
+                    
+                  </a>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  <div class="content">
+                    <p>
+                      Standing at an impressive 75 centimetres, this
+                      three-handled jar depicts an octopus with six tentacles
+                      swimming in an abstract seascape. It was presented to the
+                      Ashmolean in 1911 by the government of Crete through Sir
+                      Arthur Evans, Keeper of the Ashmolean from 1884 to 1908.
+                      The jar comes from the palace that Evans had excavated at
+                      Knossos and belongs to a culture he called Minoan, after
+                      the legendary King Minos.
+                    </p>
+                    <p>
+                      In the centuries after 1900 BC, Minoan civilization
+                      reached the height of its prosperity and influence and
+                      major palaces were built at Knossos and Mallia in the
+                      northern part of Crete, at Phaistos in the south, and at
+                      Zakros in the east. After 1500 BC, however, there was
+                      increasing influence from the Mycenaean culture of the
+                      Greek mainland and, around 1450 BC, widespread destruction
+                      on the island. Whether this was caused by invading
+                      Mycenaean warriors is unknown, but Greek influence on
+                      Crete certainly becomes even more pronounced.
+                    </p>
+                    <p>
+                      Pottery from the period following the destruction shows a
+                      blend of Minoan and Mycenaean stylistic traits. The shape
+                      of this jar is typically Mycenaean and, because the
+                      contents of such vessels – oil, wine and other commodities
+                      – were in much demand, examples have been found widely. An
+                      octopus had been a popular motif on Minoan pottery where
+                      animals were depicted with an extraordinary accuracy that
+                      came from a close observation of nature. The Mycenaean
+                      approach, however, was – as here – to take naturalistic
+                      motifs and abstract them, eventually to the point at which
+                      they are almost unrecognisable. The
+                      <a href="#page-https-collections-ashmolean-org-object-478546" target="_blank">stirrup jar</a>
+                      below, also in the Aegean World gallery, shows how the
+                      octopus has become reduced to a wavy tentacle design.
+                    </p>
+                    <figure id="ae-584" class="q-figure q-figure--image">
+                      
+                      
+                      <img alt="" class="q-figure__image" src="la-quire/iiif/ae_584/ae_584/print-image.jpg" data-outputs-include="epub,pdf">
+                      <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                        <span class="q-figure__caption-content">Stirrup jar decorated with painted tentacle pattern,
+                          1300-1200 BCE, Ashmolean Museum
+                          AN1896-1908.AE.584</span>
+                        <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  
+                </div>
+              </section>
+            </div>
+          </div>
+        </section><section class="quire-page quire-entry" data-footer-page-title="Bull’s Head Rhyton" data-footer-section-title="Catalogue" id="page-catalogue-12">
+          <div>
+            
+
+            <div class="quire-entry__image-wrap" data-outputs-include="epub,pdf">
+              <figure id="ae-2400" class="q-figure q-figure--image">
+                
+                
+                <img alt="" class="q-figure__image" src="la-quire/iiif/ae_2400/ae_2400/print-image.jpg" data-outputs-include="epub,pdf">
+                <figcaption class="q-figure__caption" data-outputs-include="epub,pdf">
+                  <span class="q-figure__caption-content">Replica bull’s head rhyton, Ashmolean Museum
+                    AN1896-1908.AE.2400</span>
+                  <span class="q-figure__credit">. © Ashmolean Museum, University of Oxford</span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="quire-entry__content">
+              <header class="quire-entry__header">
+                <div class="container">
+                  <h1 class="quire-page__header__title" id="page-header-catalogue-12">
+                    Bull’s Head Rhyton
+                  </h1>
+                  <div class="quire-page__header__contributor"></div>
+                </div>
+              </header>
+
+              <section class="quire-entry__tombstone">
+                <div class="container">
+                  <table class="table is-fullwidth">
+                    <tbody>
+                      <tr>
+                        <td>Dimensions</td>
+                        <td>h. 41 cm, w. 25.6 cm</td>
+                      </tr>
+                      <tr>
+                        <td>Materials</td>
+                        <td>plaster</td>
+                      </tr>
+                      <tr>
+                        <td>Accession</td>
+                        <td>AN1896-1908.AE.2400</td>
+                      </tr>
+                      <tr>
+                        <td>Findspot</td>
+                        <td>Knossos (original)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a class="button" href="#page-https-collections-ashmolean-org-object-584830" target="_blank">
+                    View in Collection
+                    
+                  </a>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  <div class="content">
+                    <p>
+                      Rhyta are pouring vessels. The object which this is a
+                      replica of would have been filled with wine, which would
+                      then pour out of a hole at the mouth.
+                    </p>
+                    <p>
+                      The bull’s head rhyton discovered during the excavation of
+                      the Little Palace at Knossos has become one of the most
+                      famous objects found at Knossos on the island of Crete.
+                      Archaeologist Sir Arthur Evans, the excavator of Knossos,
+                      was not allowed to remove the original from Crete and so
+                      commissioned this plaster replica. It was included in an
+                      exhibition at the Royal Academy in 1936 where replicas
+                      stood in for objects which remained in Cretan museums.
+                    </p>
+                    <div class="backmatter">
+                      <h2>Further reading</h2>
+                      <p>
+                        Athanasaki, Katerina. ‘Replica of Bull’s Head Rhyton’,
+                        in A. Shapland (ed.),
+                        <em>Labyrinth: Knossos, Myth &amp; Reality</em> (Oxford:
+                        Ashmolean Museum), p. 156-7.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section quire-page__content">
+                <div class="container">
+                  
+                </div>
+              </section>
+            </div>
+          </div>
+        </section><section class="quire-page" data-footer-page-title="Bibliography" id="page-bibliography">
+          <section class="quire-page__header hero">
+            <div class="hero-body">
+              <h1 class="quire-page__header__title" id="bibliography">
+                Bibliography
+              </h1>
+            </div>
+          </section>
+
+          <section class="section quire-page__content">
+            <div class="container">
+              <div class="content">
+                <div class="quire-page__content__references">
+                  <dl>
+                    <dt><span id="1">Brown 2001</span></dt>
+                    <dd>
+                      Brown, Ann, ed.,
+                      <em>Arthur Evans’s Travels in Crete, 1894–1899</em>, BAR
+                      international series 1000, Oxford, 2001
+                    </dd>
+                  </dl>
+
+                  <dl>
+                    <dt><span id="2">Evans 1921-1935</span></dt>
+                    <dd>
+                      Evans, Arthur J., <em>The Palace of Minos at Knossos</em>,
+                      4 vols, London, 1921-1935.
+                      <a href="#page-https-digi-ub-uni-heidelberg-de-diglit-evans1921ga" target="_blank">link</a>
+                    </dd>
+                  </dl>
+
+                  <dl>
+                    <dt><span id="3">Galanakis 2013</span></dt>
+                    <dd>
+                      Galanakis, Yannis ed.,
+                      <em>The Aegean World: A Guide to the Cycladic, Minoan and
+                        Mycenaean Antiquities in the Ashmolean Museum</em>, Oxford and Athens, 2013
+                    </dd>
+                  </dl>
+
+                  <dl>
+                    <dt><span id="4">MacGillivray 2000</span></dt>
+                    <dd>
+                      MacGillivray, J. Alexander,
+                      <em>Minotaur: Sir Arthur Evans and the Archaeology of the
+                        Minoan Myth</em>, London, 2000
+                    </dd>
+                  </dl>
+
+                  <dl>
+                    <dt><span id="5">Momigliano 2020</span></dt>
+                    <dd>
+                      Momigliano, Nicoletta,
+                      <em>In Search of the Labyrinth: The Cultural Legacy of
+                        Minoan Crete</em>, London 2020
+                    </dd>
+                  </dl>
+
+                  <dl>
+                    <dt><span id="6">Pashley 1837</span></dt>
+                    <dd>
+                      Pashley, Robert, <em>Travels in Crete</em>, vol. 1,
+                      London, 1837.
+                      <a href="#page-https-archive-org-details-travelsincrete00pash" target="_blank">link</a>
+                    </dd>
+                  </dl>
+
+                  <dl>
+                    <dt><span id="7">Shapland 2013</span></dt>
+                    <dd>
+                      Shapland, Andrew J., ‘Jumping to conclusions: bull-leaping
+                      in Minoan Crete’, <em>Society and Animals</em> 21:
+                      194-207.
+                      <a href="#page-https-www-animalsandsociety-org-wp-content-uploads-2016-05-shapland-pdf" target="_blank">link</a>
+                    </dd>
+                  </dl>
+
+                  <dl>
+                    <dt><span id="8">Shapland 2023</span></dt>
+                    <dd>
+                      Shapland, Andrew J.,
+                      <em>Labyrinth: Knossos, Myth &amp; Reality</em>, Oxford,
+                      2023
+                    </dd>
+                  </dl>
+
+                  <dl>
+                    <dt><span id="9">Spratt 1865</span></dt>
+                    <dd>
+                      Spratt, Thomas A.B.,
+                      <em>Travels and Researches in Crete</em>, vol.2, London,
+                      1865.
+                      <a href="#page-https-archive-org-details-travelsresearche02spra" target="_blank">link</a>
+                    </dd>
+                  </dl>
+
+                  <dl>
+                    <dt><span id="10">Stillman 1881</span></dt>
+                    <dd>
+                      Extracts from Letters of W.J. Stillman, Respecting Ancient
+                      Sites in Crete’, in Archaeological Institute of America,
+                      Second Annual Report of the Executive Committee, 1880–81,
+                      Cambridge, MA, 1881, pp. 41–9.
+                      <a href="#page-https-archive-org-details-acj4305-0001-001-umich-edu" target="_blank">link</a>
+                    </dd>
+                  </dl>
+
+                  <dl>
+                    <dt><span id="11">Whitley 2023</span></dt>
+                    <dd>
+                      Whitley, James,
+                      <em>Knossos: Myth, History and Archaeology</em>, London,
+                      2023
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section quire-page__content">
+            <div class="container">
+              
+            </div>
+          </section>
+        </section><section class="quire-page" data-footer-page-title="Contributors" id="page-contributors">
+          <section class="quire-page__header hero">
+            <div class="hero-body">
+              <h1 class="quire-page__header__title" id="contributors">
+                Contributors
+              </h1>
+            </div>
+          </section>
+
+          <section class="section quire-page__content">
+            <div class="container">
+              <div class="content">
+                <ul class="quire-contributors-list bio align-left">
+                  <li class="quire-contributor" id="andrew-shapland">
+                    <div class="title is-5">
+                      <span class="quire-contributor__name">Andrew Shapland</span>
+                      <a href="#page-https-www-ashmolean-org-people-andrew-shapland" class="quire-contributor__url" target="_blank">
+                        
+                      </a>
+                    </div>
+                    <div class="media">
+                      <div class="quire-contributor__details media-content">
+                        <div class="media-left">
+                          <img class="image quire-contributor__pic" src="la-quire/_assets/images/contributors/andrew-shapland.jpg" alt="Picture of Andrew Shapland">
+                        </div>
+                        <div class="quire-contributor__bio">
+                          Andrew Shapland is Sir Arthur Evans Curator of Bronze
+                          Age and Classical Greece at the Ashmolean Museum,
+                          University of Oxford
+                        </div>
+                        <ul></ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="section quire-page__content">
+            <div class="container">
+              
+            </div>
+          </section>
+        </section><section class="quire-page" data-footer-page-title="About" id="page-about">
+          <section class="quire-page__header hero">
+            <div class="hero-body">
+              <h1 class="quire-page__header__title" id="about">About</h1>
+            </div>
+          </section>
+
+          <section class="section quire-page__content">
+            <div class="container">
+              <div class="content">
+                <p>
+                  This resource was produced using
+                  <a href="#page-https-gettypubs-github-io-quire" target="_blank">Quire</a>, a multiformat digital publishing framework. Quire can be
+                  used to generate a web book, EPUB and MOBI e-books, and a PDF
+                  optimized for print; all from a single set of text files.
+                </p>
+                <p>
+                  The resource is an output of the AHRC-funded project
+                  ‘Enriching Exhibition Stories: Adding Voices to Quire’. With
+                  thanks to Aruna Bhaugeerutty, Tyler Bonnet, Sarah Casey,
+                  Kirsti Deacon, Kevin Page, Clare Llewellyn, Rob Sanderson and
+                  Aik Wen Tan for their help.
+                </p>
+                <p>
+                  The exhibition
+                  <em>Labyrinth: Knossos, Myth &amp; Reality</em> was held at
+                  the Ashmolean Museum in 2023. Content from this exhibition was
+                  reused in this publication: ‘The Aegean World Gallery: The
+                  Cretan collection’ is from the exhibition catalogue; ‘Looking
+                  for the Labyrinth: From Myth to Reality’ is from the Ashmolean
+                  website; ‘Life in the Palace: Knossos in the Bronze Age’ is
+                  from the exhibition panel text; the catalogued objects were
+                  with one exception (Kamares Cup) in the exhibition and
+                  catalogue text has been adapted from exhibition labels and
+                  object records.
+                </p>
+                <p>
+                  The exhibition took place in collaboration with:<br>
+                  Hellenic Ministry of Culture and Sports, General Directorate
+                  of Antiquities and Cultural Heritage<br>
+                  National Archaeological Museum, Athens<br>
+                  Heraklion Archaeological Museum<br>
+                  Ephorate of Antiquities of Heraklion<br>
+                  British School at Athens
+                </p>
+                <p>
+                  The exhibition was supported by:<br>
+                  The Al Thani Collection Foundation and His Highness Sheikh
+                  Hamad bin Abdullah Al Thani<br>
+                  The Patrons of the Ashmolean Museum<br>
+                  The Emmett Family<br>
+                  A. G. Leventis Foundation<br>
+                  Malcolm Hewitt Wiener Foundation<br>
+                  The Luscinus Trust<br>
+                  Michael and Sue Pragnell<br>
+                  The Hellenic Foundation<br>
+                  The John S Fafalios Foundation
+                </p>
+                <p>
+                  With thanks to everyone from the Ashmolean and beyond who has
+                  contributed to the exhibition and the associated research
+                  projects.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section quire-page__content">
+            <div class="container">
+              
+            </div>
+          </section>
+        </section></body></html>

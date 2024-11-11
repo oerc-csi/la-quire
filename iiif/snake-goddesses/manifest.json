@@ -1,0 +1,52 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://oerc-csi.github.io/la-quire/iiif/snake-goddesses/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      null
+    ]
+  },
+  "items": [
+    {
+      "id": "https://oerc-csi.github.io/la-quire/iiif/snake-goddesses/canvas",
+      "type": "Canvas",
+      "height": 3000,
+      "width": 4500,
+      "items": [
+        {
+          "id": "https://oerc-csi.github.io/la-quire/iiif/snake-goddesses/canvas/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://oerc-csi.github.io/la-quire/iiif/snake-goddesses/canvas/snake-goddesses",
+              "motivation": "painting",
+              "target": "https://oerc-csi.github.io/la-quire/iiif/snake-goddesses/canvas",
+              "type": "Annotation",
+              "body": {
+                "id": "https://oerc-csi.github.io/la-quire/iiif/snake-goddesses/snake-goddesses/tiles/info.json",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 3000,
+                "width": 4500,
+                "label": {
+                  "en": [
+                    "Snake-goddesses"
+                  ]
+                },
+                "service": [
+                  {
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "@id": "https://oerc-csi.github.io/la-quire/iiif/snake-goddesses/snake-goddesses/tiles/info.json",
+                    "profile": "level0",
+                    "protocol": "http://iiif.io/api/image"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

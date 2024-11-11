@@ -1,0 +1,52 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://oerc-csi.github.io/la-quire/iiif/cat-an1938.850-drawing/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      null
+    ]
+  },
+  "items": [
+    {
+      "id": "https://oerc-csi.github.io/la-quire/iiif/cat-an1938.850-drawing/canvas",
+      "type": "Canvas",
+      "height": 973,
+      "width": 3000,
+      "items": [
+        {
+          "id": "https://oerc-csi.github.io/la-quire/iiif/cat-an1938.850-drawing/canvas/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://oerc-csi.github.io/la-quire/iiif/cat-an1938.850-drawing/canvas/AN1938_850-drawing",
+              "motivation": "painting",
+              "target": "https://oerc-csi.github.io/la-quire/iiif/cat-an1938.850-drawing/canvas",
+              "type": "Annotation",
+              "body": {
+                "id": "https://oerc-csi.github.io/la-quire/iiif/cat-an1938.850-drawing/AN1938_850-drawing/tiles/info.json",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 973,
+                "width": 3000,
+                "label": {
+                  "en": [
+                    "A N1938 850-drawing"
+                  ]
+                },
+                "service": [
+                  {
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "@id": "https://oerc-csi.github.io/la-quire/iiif/cat-an1938.850-drawing/AN1938_850-drawing/tiles/info.json",
+                    "profile": "level0",
+                    "protocol": "http://iiif.io/api/image"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

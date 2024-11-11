@@ -1,0 +1,52 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://oerc-csi.github.io/la-quire/iiif/temple-repositories/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      null
+    ]
+  },
+  "items": [
+    {
+      "id": "https://oerc-csi.github.io/la-quire/iiif/temple-repositories/canvas",
+      "type": "Canvas",
+      "height": 1342,
+      "width": 1856,
+      "items": [
+        {
+          "id": "https://oerc-csi.github.io/la-quire/iiif/temple-repositories/canvas/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://oerc-csi.github.io/la-quire/iiif/temple-repositories/canvas/temple-repositories",
+              "motivation": "painting",
+              "target": "https://oerc-csi.github.io/la-quire/iiif/temple-repositories/canvas",
+              "type": "Annotation",
+              "body": {
+                "id": "https://oerc-csi.github.io/la-quire/iiif/temple-repositories/temple-repositories/tiles/info.json",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1342,
+                "width": 1856,
+                "label": {
+                  "en": [
+                    "Temple-repositories"
+                  ]
+                },
+                "service": [
+                  {
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "@id": "https://oerc-csi.github.io/la-quire/iiif/temple-repositories/temple-repositories/tiles/info.json",
+                    "profile": "level0",
+                    "protocol": "http://iiif.io/api/image"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
