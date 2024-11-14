@@ -44,11 +44,20 @@ function validateObjectFieldNames(config) {
 async function fetchData(uri) {
     try {
         // Fetch Linked Art recording using content negotation to request JSON-LD
-        const response = await fetch(uri, {
+        let response = await fetch(uri, {
             headers: {
                 'Accept': 'application/ld+json'
             }
         });
+
+        // If JSON-LD is not available (status 406), fall back to regular JSON
+        if (response.status === 406) {
+            response = await fetch(uri, {
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+        }
         if (response.ok) {
             return await response.json();
         }
@@ -845,11 +854,24 @@ async function findImageUri(iiifManifestData) {
         const context = iiifManifestData['@context'];
         // Declare imageUri variable outside the conditional block
         let imageUri;
-        // Traverse through the specified path to find the image file depending on context
-        if (context === 'http://iiif.io/api/presentation/3/context.json') {
-            imageUri = iiifManifestData.items?.[0]?.items?.[0]?.items?.[0]?.body?.id;
-        } else if (context === 'http://iiif.io/api/presentation/2/context.json') {
-            imageUri = iiifManifestData.sequences?.[0]?.canvases?.[0]?.images?.[0]?.resource["@id"]
+
+        // Check if context is an array or a single context
+        if (Array.isArray(context)) {
+            // Check if the context array includes the IIIF Presentation 3 context
+            if (context.includes('http://iiif.io/api/presentation/3/context.json')) {
+                imageUri = iiifManifestData.items?.[0]?.items?.[0]?.items?.[0]?.body?.id;
+            } 
+            // Check if the context array includes the IIIF Presentation 2 context
+            else if (context.includes('http://iiif.io/api/presentation/2/context.json')) {
+                imageUri = iiifManifestData.sequences?.[0]?.canvases?.[0]?.images?.[0]?.resource["@id"];
+            }
+        } else {
+            // If context is a single string, check if it matches IIIF Presentation 3 or 2
+            if (context === 'http://iiif.io/api/presentation/3/context.json') {
+                imageUri = iiifManifestData.items?.[0]?.items?.[0]?.items?.[0]?.body?.id;
+            } else if (context === 'http://iiif.io/api/presentation/2/context.json') {
+                imageUri = iiifManifestData.sequences?.[0]?.canvases?.[0]?.images?.[0]?.resource["@id"];
+            }
         }
 
         // If an image file is found, return its URI
@@ -1507,22 +1529,19 @@ export default class yogLinkedArtCommand extends Command {
                         // Get objectData
                         if (!objectData) {
                             objectData = await getObjectData(linkedArtCachePath, uri, options);
-                        }                                                
+                        }                                              
                     
                         iiifManifestData = await findIIIFManifest(objectData);
 
                         // Store fetched data in the cache file
                         cachedData[uri] = { objectData, iiifManifestData };
                         await fs.promises.writeFile(linkedArtCachePath, JSON.stringify(cachedData, null, 2), 'utf-8');
-
                         // Find objectTitle in objectData
                         let objectTitle;
                         objectTitle = await findObjectTitle(objectData, primaryNameUris, enUris, ['primaryAndEn', 'primary', 'other']);
-
                         // Find accession in objectData
                         let accession;
                         accession = await findAccession(objectData, accessionUris);
-
                         // Find creditLine in objectData
                         let creditLine
                         creditLine = await findLinguisticObject(objectData, creditLineUris, 'Credit line');
@@ -1814,7 +1833,7 @@ export default class yogLinkedArtCommand extends Command {
                             id: figureId,
                             src: `figures/${figureId}.jpg`,
                             caption: `${objectTitle}.`,
-                            credit: `${creditLine}`,
+                            //credit: `${creditLine}`,
                             accession: accession,
                             uri: uri
                         };
@@ -2052,7 +2071,7 @@ export default class yogLinkedArtCommand extends Command {
                             id: figureId,
                             src: `figures/${figureId}.jpg`,
                             caption: `${objectTitle}.`,
-                            credit: `${creditLine}`,
+                            //credit: `${creditLine}`,
                             accession: accession,
                             uri: uri
                         }
@@ -2240,7 +2259,7 @@ export default class yogLinkedArtCommand extends Command {
                             id: figureId.toString(),
                             src: `figures/${figureId}.jpg`,
                             caption: `${objectTitle}.`,
-                            credit: `${creditLine}`,
+                            //credit: `${creditLine}`,
                             accession: accession,
                             uri: uri
                         }
