@@ -43,21 +43,13 @@ function validateObjectFieldNames(config) {
 
 async function fetchData(uri) {
     try {
-        // Fetch Linked Art recording using content negotation to request JSON-LD
+        // Fetch JSON-LD or JSON (whichever is available) in a single request
         let response = await fetch(uri, {
             headers: {
-                'Accept': 'application/ld+json'
+                'Accept': 'application/ld+json, application/json'
             }
         });
 
-        // If JSON-LD is not available (status 406), fall back to regular JSON
-        if (response.status === 406) {
-            response = await fetch(uri, {
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
-        }
         if (response.ok) {
             return await response.json();
         }
