@@ -1317,8 +1317,8 @@ export default class yogLinkedArtCommand extends Command {
         summary: 'fetch Linked Art',
         version: '',
         args: [
-            ['<thing>', 'scaffold a new entry in the Quire data files: object, object.figure, figure, or spreadsheet'],
-            ['<uri>', 'uri of the linked art object'],
+            ['[thing]', 'scaffold a new entry in the Quire data files: object, object.figure, figure, or spreadsheet'],
+            ['[uri]', 'uri of the linked art object'],
             ['[id1]', 'quire entry id optional for object and figure but required for object.figure'],
             ['[id2]', 'optional quire entry id for object.figure']
         ],
@@ -1328,6 +1328,7 @@ export default class yogLinkedArtCommand extends Command {
             [ '-i', '--interactive', 'build your linked art entry with an interactive prompt'],
             [ '-r', '--resize', 'resize the image retrieved'],
             [ '-s', '--select', 'select uris to process from activity spreadsheet'],
+            [ '-u', '--update', 'update linked art in objects.yaml'],
         ],
     };
 
@@ -1425,8 +1426,37 @@ export default class yogLinkedArtCommand extends Command {
 
             // Check if user has provided multiple URIs
             let uriList;
-            uriList = uri.split(' ');
+
+            // Check if the 'update' option is true
+            if (options['update']) {
+                // Look up the field name for 'uri' from config
+                let linkedArtField = config.objectFieldNames.uri;
+
+                // Initialize uriList as an empty array within the if block
+                uriList = [];
+
+                // Iterate over each entry in 'object_list' in 'objectsYaml'
+                for (let i = 0; i < objectsYaml.object_list.length; i++) {
+                    let obj = objectsYaml.object_list[i];
+
+                    // Check if the object has the field corresponding to 'linked art uri'
+                    if (obj[linkedArtField]) {
+                        // Add the URI to the uriList (space-separated)
+                        uriList.push(obj[linkedArtField]);
+                        
+                        // Delete the entire object from object_list
+                        objectsYaml.object_list.splice(i, 1);
+                        
+                        // Decrement index to account for the removed object
+                        i--;
+                    }
+                }
+            } else {
+                uriList = uri.split(' ');
+            }
+
             for (uri of uriList) {
+                console.log(uri)
                 // Fetch Linked Art recording using content negotation to request JSON-LD
                 const data = await fetchData(uri);
                 const dataType = data['type']
@@ -1484,15 +1514,30 @@ export default class yogLinkedArtCommand extends Command {
                         // Validate the object field names
                         validateObjectFieldNames(config);
 
-                        // Fetch the objectId field name from config.yaml
-                        const linkedArtUriFieldName = config.objectFieldNames.uri;
-
-                        // Check if the linked art URI already exists in the specified field
-                        if (objectsYaml.object_list && objectsYaml.object_list.some(obj => obj[linkedArtUriFieldName] === uri)) {
-                            console.log(`The Linked Art URI ${uri} already exists in the objects.yaml file.`);
-                            break;
+                        // Check if an objects.yaml entry exists for the URI
+                        if (
+                            objectsYaml.object_list && 
+                            objectsYaml.object_list.some(obj => 
+                                Object.values(obj).some(value => value === uri)
+                            )
+                        ) {
+                            // Terminate code to avoid duplicate entry
+                            if (!options['force']) {
+                                console.log(`An entry for the URI already exists in the objects.yaml file.`);
+                                break;
+                            }
+                            // Delete existing objects.yaml entry for uri if --force is used
+                            else if (options['force']) {
+                                const index = objectsYaml.object_list.findIndex(obj =>
+                                    Object.values(obj).some(value => value === uri)
+                                );
+                                if (index !== -1) {
+                                    console.log(`An entry for the URI already exists in the objects.yaml file. Overwriting...`)
+                                    objectsYaml.object_list.splice(index, 1);
+                                }
+                            }
                         }
-                        
+
                         // Initialize figureId
                         let figureId;
 
@@ -1684,6 +1729,7 @@ export default class yogLinkedArtCommand extends Command {
                             objectId = id1;
                         }
                         const metadata = {};
+                        let uriIncluded = false;
                         metadata['id'] = objectId;
                         metadata['title'] = objectTitle;
                         // Iterate through keyValuePairs and add fields to metadata if they exist
@@ -1692,6 +1738,15 @@ export default class yogLinkedArtCommand extends Command {
                             if (typeof eval(variable) !== 'undefined' && !(Array.isArray(eval(variable)) && eval(variable).length === 0)) {
                                 metadata[field] = eval(variable);
                             }
+                            if (field === 'uri') {
+                                uriIncluded = true;
+                            }
+                        }
+                        
+                        // Ensure linked art uri is included in objects.yaml entry as certain functionality, such as duplicate prevention, depends on it
+                        if (!uriIncluded) {
+                            const uriVariable = config.objectFieldNames['uri']
+                            metadata[uriVariable] = uri;
                         }
                         metadata['figure'] = [];
 
@@ -1765,6 +1820,7 @@ export default class yogLinkedArtCommand extends Command {
                                     figureId = cache[imageHash];
                                     console.log(`Figure already in figures folder. Using file name '${cache[imageHash]}' as figure ID.`);
                                 } else {
+                                    console.log(`Downloading image to project's figures folder...`);
                                     // Check if an existing figure with the same URI is found in figures.yaml
                                     if (existingFigure) {
                                         // If an existing figure is found, use its ID
@@ -1872,7 +1928,6 @@ export default class yogLinkedArtCommand extends Command {
                                 fs.writeFileSync('./content/_data/figures.yaml', yaml.dump(figuresYaml));
                         
                                 // Save image file
-                                console.log(`Downloading image to project's figures folder...`);
                                 const imagePath = `./content/_assets/images/figures/${figureId}.jpg`;
                                 fs.writeFileSync(imagePath, imageBuffer);
                             }
@@ -2016,6 +2071,7 @@ export default class yogLinkedArtCommand extends Command {
                                 figureId = cache[imageHash];
                                 console.log(`Figure already in figures folder. Using file name '${cache[imageHash]}' as figure ID.`);
                             } else {
+                                console.log(`Downloading image to project's figures folder...`);
                                 // Check if the figure ID is already included in the list of figures of the object
                                 if (objectsYaml.object_list[objectIndex].figure.some(figure => figure.id === figureId)) {
                                     console.log("Figure already included in the object's list of figures.");
@@ -2076,7 +2132,6 @@ export default class yogLinkedArtCommand extends Command {
                             console.log(figure_metadata);
                         } else {
                             // Save image file
-                            console.log(`Downloading image to project's figures folder...`);
                             const imagePath = `./content/_assets/images/figures/${figureId}.jpg`;
                             fs.writeFileSync(imagePath, imageBuffer);
 
@@ -2220,6 +2275,7 @@ export default class yogLinkedArtCommand extends Command {
                                 figureId = cache[imageHash];
                                 console.log(`Figure already in figures folder. Using file name '${cache[imageHash]}' as figure ID.`);
                             } else {
+                                console.log(`Downloading image to project's figures folder...`);
                                 // Generate a new figure ID
                                 if (id1 === 'accession') {
                                     if (!accession) {
@@ -2262,7 +2318,6 @@ export default class yogLinkedArtCommand extends Command {
                             console.log(figure_metadata);
                         } else {
                             // Save image file
-                            console.log(`Downloading image to project's figures folder...`);
                             const imagePath = `./content/_assets/images/figures/${figureId}.jpg`;
                             fs.writeFileSync(imagePath, imageBuffer);
 
