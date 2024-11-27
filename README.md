@@ -1,5 +1,7 @@
 # Linked Art Extension for Quire
 
+***WARNING this version of the Quire Linked Art Extension is not tested. It is a quick experiment for [issue 2](https://github.com/oerc-csi/la-quire/issues/2), do not use in any deployed situation.***
+
 This GitHub repository serves as a resource for the *Enriching Exhibition Stories: Adding Voices to Quire* project, providing access to the documentation and materials related to our Linked Art extension for Quire. Here, users will find detailed information on how to utilize the extension to import Linked Art data into their Quire projects, along with code and instructions for implementation. For comprehensive project details, including objectives and updates, please refer to our [project homepage](https://linked.art/community/projects/ees2/).
 
 ## Documentation
