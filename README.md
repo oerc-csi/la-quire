@@ -4,59 +4,6 @@
 
 This GitHub repository serves as a resource for the *Enriching Exhibition Stories: Adding Voices to Quire* project, providing access to the documentation and materials related to our Linked Art extension for Quire. Here, users will find detailed information on how to utilize the extension to import Linked Art data into their Quire projects, along with code and instructions for implementation. For comprehensive project details, including objectives and updates, please refer to our [project homepage](https://linked.art/community/projects/ees2/).
 
-# Quire Linked Art Extension
-
-The Quire Linked Art Extension enables the retrieval and ingestion of Linked Art data and IIIF images via Quire’s command-line interface, seamlessly merging them into a Quire project. It interacts with Linked Art records through their URIs, streamlining processes that previously required manual data entry. The video below showcases the extension’s functionality, demonstrating its use with Linked Art records accessed via the LUX and Getty APIs.
-
-<script src="https://www.youtube.com/iframe_api"></script>
-
-<div id="player"></div>
-
-[(.mp4 download)](https://github.com/oerc-csi/la-quire/raw/main/docs/quire_linked_art_extension_demo.mp4)
-
-<ul>
-    <li><a href="javascript:void(0);" onclick="seekToTime(0)">00:00 - Adding an object from a Linked Art resource</a></li>
-    <li><a href="javascript:void(0);" onclick="seekToTime(150)">02:30 - Adding a figure from a Linked Art resource to an existing object</a></li>
-    <li><a href="javascript:void(0);" onclick="seekToTime(240)">04:00 - Adding a figure from a Linked Art resource</a></li>
-    <li><a href="javascript:void(0);" onclick="seekToTime(322)">05:22 - Choosing what fields to retrieve</a></li>
-    <li><a href="javascript:void(0);" onclick="seekToTime(420)">07:00 - Processing multiple Linked Art records in a single command</a></li>
-    <li><a href="javascript:void(0);" onclick="seekToTime(495)">08:15 - Using a Linked Art activity URI to add all objects featured in an exhibition</a></li>
-    <li><a href="javascript:void(0);" onclick="seekToTime(570)">09:30 - Choosing fields interactively and previewing entries</a></li>
-    <li><a href="javascript:void(0);" onclick="seekToTime(629)">10:29 - Generating a spreadsheet of all data in a Linked Art record</a></li>
-    <li><a href="javascript:void(0);" onclick="seekToTime(690)">11:30 - Resizing an image upon retrieval</a></li>
-    <li><a href="javascript:void(0);" onclick="seekToTime(760)">12:40 - Selectively importing objects from an activity record based on object type and artist name</a></li>
-    <li><a href="javascript:void(0);" onclick="seekToTime(850)">14:10 - Running native build, pdf, and epub commands</a></li>
-</ul>
-
-<script>
-    var player;
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-            height: '315',
-            width: '560',
-            videoId: 'XEzPBwicQAg',
-            events: {
-                'onReady': onPlayerReady
-            }
-        });
-    }
-
-    function onPlayerReady(event) {
-    }
-
-    function seekToTime(seconds) {
-        if (player) {
-            player.seekTo(seconds, true);
-        }
-    }
-</script>
-
-## Quire Linked Art Extension Installation
-
-The Quire Linked Art Extension is available on the [releases](https://github.com/oerc-csi/la-quire/releases) page of the EES2 project's GitHub repository. In the 'Assets' dropdown of the latest version, click on the 'js-files.zip' link to download.
-
-Once you have downloaded the Quire Linked Art Extension, visit our [Training](https://linked.art/community/projects/ees2/docs/training) page for installation instructions.
-
 ## Quire Linked Art Extension Documentation
 
 The Linked Art command class for Quire is called `add`. Information about Quire’s command classes can be accessed by running `quire help` in the terminal. `add` is listed as follows:
