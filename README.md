@@ -2,7 +2,7 @@
 
 This GitHub repository serves as a resource for the *Enriching Exhibition Stories: Adding Voices to Quire* project, providing access to the documentation and materials related to our Linked Art extension for Quire. Here, users will find detailed information on how to utilize the extension to import Linked Art data into their Quire projects, along with code and instructions for implementation. For comprehensive project details, including objectives and updates, please refer to our [project homepage](https://linked.art/community/projects/ees2/).
 
-## Documentation
+## Quire Linked Art Extension Documentation
 
 The Linked Art command class for Quire is called `add`. Information about Quire’s command classes can be accessed by running `quire help` in the terminal. `add` is listed as follows:
 
@@ -57,6 +57,8 @@ The `spreadsheet` arg provides a way for the user to easily browse Linked Art by
 ### **2 Choosing fields, field order, and field names**
 
 The user has the ability to choose which fields are retrieved from the Linked Art record, the order in which they are displayed, and their names. Field selection and order are handled by the object_display_order section of the objects.yaml file, and field names can be changed from defaults in the objectFieldNames section of the config.yaml file.
+
+The object’s title and Linked Art URI will be retrieved regardless of their presence in the object_display_order. The extension relies on the URI for functionality such as duplicate prevention. To ensure optimal results, it is recommended to keep URIs in the objects listed in the object_list. However, the URI can be omitted from rendered content by excluding it from the object_display_order.
 
 #### **2.1 objects.yaml object_display_order**
 
@@ -142,7 +144,7 @@ After a selection is made, the program will process all the objects in the ‘ac
 
 ### **4 Options**
 
-There are two options: `--dry-run` and `--force`.
+There are five options: `--dry-run`, `--force`, `--resize`, `--interactive`, and `--select`.
 
 #### **4.1 Preview an entry before adding to objects.yaml or figures.yaml**
 
@@ -154,7 +156,7 @@ The user has the option to preview an entry before it is added to objects.yaml o
 
 When the user runs commands that retrieve Linked Art data and figures, the data and figure hashes will be added to caches. When a URI that has been passed is passed again, the program will retrieve Linked Art data from the cache instead of making new http requests to refetch the data.
 
-The user has the ability to change the fields they wish to retrieve as they work on their project. Therefore, there could be cases where the user passes a URI they have passed before, but wishes to retrieve fields that are not in the cache. The ‘--force’ option allows the user to ignore cache and refetch Linked Art to retrieve the desired fields. The cache entry for the URI is rewritten.
+The user has the ability to change the fields they wish to retrieve as they work on their project. Therefore, there could be cases where the user passes a URI they have passed before, but wishes to retrieve fields that are not in the cache. The ‘--force’ option allows the user to ignore cache and refetch Linked Art to retrieve the desired fields. The cache and objects.yaml entries for the URI are overwritten.
 
 `quire add <thing> <uri> [id1] [id2] --force`
 
@@ -185,3 +187,13 @@ When `--interactive` is passed, an interaction will start:
 `artist, type, year, period, dimensions, materials, location, accession, credit line, set, owner, took place at, encountered by, find spot, access statement, web page, thumbnail link, description, citations, provenance`
 
 After entering a comma-separated list of fields, the module disregards the object_display_order and retrieves the fields in the list in the order they were provided.
+
+#### **4.5 Selecting objects in 'activity' record**
+
+When `--select` is passed along with an ‘activity’ URI, a list of creators of the objects included in the record and their types will be presented. This initiates an interactive selection process:
+
+`Please select the URIs you would like to process based on creators and object types (e.g., "creators: raphael, vincent van gogh AND/OR types: drawing, painting"):`
+
+After entering the selection in the required format, only the objects that meet the criteria will be processed.
+
+**Note:** A spreadsheet is generated and used to facilitate filtering URIs based on the chosen creators and object types. This option requires that ‘b’ (both spreadsheet generation and processing) is selected in the interaction explained in Section 3. The `--select` option will not work if ‘p’ (process only) is chosen, as no spreadsheet will be generated in that mode.
